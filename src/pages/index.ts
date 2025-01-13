@@ -1,6 +1,13 @@
-export { default as Home } from "./Home";
+export { default as Home } from "./Home/Home";
 export { default as Organizations } from "./Organizations";
 export { default as News } from "./News";
 export { default as Monitoring } from "./Monitoring";
 export { default as Statistics } from "./Statistics";
 export { default as AIData } from "./AI-Data";
+export { default as Copyrights } from "./Copyrights";
+export { default as Glossary } from "./Glossary";
+export { default as Instructions } from "./Instructions";
+export { default as Legislation } from "./Legislation";
+export { default as Requests } from "./Requests";
+export { default as Faq } from "./Faq";
+export { default as Poll } from "./Poll";

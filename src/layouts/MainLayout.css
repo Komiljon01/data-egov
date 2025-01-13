@@ -1,0 +1,23 @@
+.sidebar {
+  position: fixed;
+  top: 100px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.leftsidebar {
+  left: 10px;
+}
+
+.rightsidebar {
+  right: 10px;
+  align-items: flex-end;
+}
+
+/* Responsive */
+@media screen and (max-width: 1025px) {
+  .sidebar {
+    display: none;
+  }
+}

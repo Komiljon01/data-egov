@@ -1,0 +1,194 @@
+.sidebar-el {
+  width: 50px;
+  height: 50px;
+  background-color: #6e9be9;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 7px 32px rgba(42, 82, 152, 0.2);
+  overflow: hidden;
+}
+
+.sidebar-el-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  color: #fff;
+  font-family: "Fira Sans", sans-serif;
+  transition: color 0.3s ease;
+}
+
+.sidebar-el-text {
+  display: none;
+  max-width: 0;
+  overflow: hidden;
+  opacity: 0;
+  letter-spacing: 0.002em;
+  font-size: 0.86rem;
+  white-space: nowrap;
+  transition: max-width 0.3s ease, opacity 0.3s ease;
+}
+
+.sidebar-el-icon {
+  font-size: 22px;
+  transition: color 0.3s ease;
+}
+
+.sidebar-el:hover {
+  width: auto;
+  border-radius: 25px;
+  padding: 20px;
+  background-color: #fff;
+  transition: all 0.3s ease;
+}
+
+.sidebar-el:hover .sidebar-el-text {
+  display: block;
+  max-width: 150px;
+  opacity: 1;
+}
+
+.sidebar-el:hover .sidebar-el-text,
+.sidebar-el:hover .sidebar-el-icon {
+  color: #22427a;
+}
+
+/* Sidebar survey modal */
+.sidebar-modal.MuiDialog-root .MuiPaper-root {
+  max-width: 538px;
+  width: 100%;
+  padding: 30px;
+  border-radius: 16px;
+  position: relative;
+  font-family: "Rubik", sans-serif;
+}
+
+.sidebar-modal.MuiDialog-root .MuiPaper-root .sidebar-modal-close-btn {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 26px;
+  color: darkgray;
+  cursor: pointer;
+}
+
+.sidebar-modal .sidebar-survey-title,
+.sidebar-modal .sidebar-form-title {
+  font-size: 23.8px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  font-weight: "Rubik", sans-serif;
+}
+
+.sidebar-modal .sidebar-survey-text {
+  margin: 30px 0 20px;
+  font-size: 14px;
+  font-family: "Fira Sans", sans-serif;
+  color: rgba(34, 34, 34, 0.8);
+  line-height: 150%;
+  letter-spacing: 0.004em;
+  font-weight: 400;
+}
+
+.sidebar-survey-divider.MuiDivider-root {
+  margin: 20px 0;
+  border-bottom: 1px solid rgba(34, 34, 34, 0.05);
+}
+
+.sidebar-survey-footer span {
+  font-family: "Rubik", sans-serif;
+  line-height: 150%;
+  letter-spacing: 0.002em;
+  color: rgba(34, 34, 34, 0.4);
+  padding: 1px 6px;
+  font-size: 13.3333px;
+  cursor: pointer;
+}
+
+.sidebar-survey-footer button.MuiButtonBase-root {
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-family: "Rubik", sans-serif;
+  background-color: #3369c7;
+  border-radius: 8px;
+  padding: 12px 30px;
+  transition: background-color 0.3s ease;
+  text-transform: capitalize;
+}
+
+.sidebar-survey-footer button.MuiButtonBase-root:hover {
+  background-color: #22427a;
+}
+
+/* Sidebar form */
+.sidebar-modal .sidebar-form-title {
+  margin-bottom: 40px;
+}
+
+.sidebar-form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.sidebar-form label {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  font-family: "Fira Sans", sans-serif;
+  line-height: 150%;
+  letter-spacing: 0.004em;
+  color: #222222cc;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.sidebar-form-textarea {
+  background: #fff;
+  border: 1px solid rgba(34, 34, 34, 0.2);
+  border-radius: 4px;
+  padding: 12.5px 15px;
+  font-size: "14px";
+}
+
+.sidebar-form-textarea::placeholder {
+  font-family: "Fira Sans", sans-serif;
+  color: #222;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  opacity: 0.4;
+}
+
+.sidebar-form-textarea:focus {
+  outline: none;
+}
+
+.sidebar-form-btn.MuiButtonBase-root {
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-family: "Rubik", sans-serif;
+  background-color: #b21d53;
+  border-radius: 4px;
+  padding: 12px 30px;
+  transition: background-color 0.3s ease;
+  text-transform: capitalize;
+}
+
+.sidebar-form-btn.MuiButtonBase-root:hover {
+  background-color: #8e1742;
+}
+
+.sidebar-contacts-form .success-message {
+  font-size: 18px;
+  color: #222;
+}

@@ -7,6 +7,13 @@ import {
   Monitoring,
   Statistics,
   AIData,
+  Copyrights,
+  Faq,
+  Glossary,
+  Instructions,
+  Legislation,
+  Requests,
+  Poll,
 } from "./pages";
 
 function App() {
@@ -38,6 +45,34 @@ function App() {
         {
           path: "/ai-data",
           element: <AIData />,
+        },
+        {
+          path: "/copyrights",
+          element: <Copyrights />,
+        },
+        {
+          path: "/glossary",
+          element: <Glossary />,
+        },
+        {
+          path: "/instructions",
+          element: <Instructions />,
+        },
+        {
+          path: "/legislation",
+          element: <Legislation />,
+        },
+        {
+          path: "/requests",
+          element: <Requests />,
+        },
+        {
+          path: "/faq",
+          element: <Faq />,
+        },
+        {
+          path: "/poll",
+          element: <Poll />,
         },
       ],
     },
