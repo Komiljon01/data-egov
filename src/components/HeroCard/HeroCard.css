@@ -1,0 +1,47 @@
+.hero-card {
+  position: relative;
+  cursor: pointer;
+  font-family: "PT Sans", sans-serif;
+  transition: 0.3s;
+  border: 1px solid rgba(48, 111, 221, 0.2);
+  border-radius: 8px;
+}
+
+.hero-card:hover {
+  box-shadow: 0 7px 32px rgba(42, 82, 152, 0.2);
+  transition: all 0.1s;
+  transform: scale(1.1);
+}
+
+.hero-card.MuiPaper-root {
+  padding: 0;
+  background-color: #3369c7;
+  color: #fff;
+}
+
+.hero-card-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.hero-card-content.MuiCardContent-root {
+  padding: 7px 15px;
+}
+
+.hero-card-img {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  top: 10px;
+  right: 10px;
+}
+
+.hero-card-text {
+  font-size: 18.2px;
+}
+
+.hero-card-number {
+  font-size: 23.8px;
+}

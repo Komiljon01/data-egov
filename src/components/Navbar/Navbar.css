@@ -218,3 +218,9 @@
     width: auto;
   }
 }
+
+@media screen and (max-width: 400px) {
+  .navbar-menu-content.MuiDrawer-root .MuiPaper-root {
+    width: 80%;
+  }
+}

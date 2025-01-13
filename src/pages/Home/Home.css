@@ -1,0 +1,141 @@
+.hero {
+  padding-top: 50px;
+}
+
+.hero .hero-intro {
+  font-family: "Rubik", sans-serif;
+  font-weight: 500;
+  font-size: 32.2px;
+  line-height: 150%;
+  font-style: normal;
+  color: #222;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+/* Hero Form */
+.hero-form {
+  max-width: 1065px;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+}
+
+.hero-form-filter {
+  width: 49px;
+  height: 49px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  color: #85a5dd;
+  border-top: 1px solid rgba(48, 111, 221, 0.2);
+  border-bottom: 1px solid rgba(48, 111, 221, 0.2);
+}
+
+.hero-form button {
+  padding: 12px 16px;
+  background: #bf5c7f;
+  border-radius: 0 10px 10px 0;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  width: 120px;
+  transition: all 0.9s;
+  font-family: "Fira Sans", sans-serif;
+}
+
+.hero-form button:hover {
+  background: #8e1742;
+}
+
+/* Hero Stats */
+.hero-stats {
+  margin-top: 50px;
+  row-gap: 15px;
+  text-align: center;
+  gap: 30px 50px;
+}
+
+.hero-stats-item {
+  margin: 0 auto;
+}
+
+.hero-stats-item span {
+  font-family: "Rubik", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 19.6px;
+  line-height: 150%;
+  letter-spacing: 0.002em;
+}
+
+/* Hero Cards */
+.hero-cards {
+  display: grid;
+  gap: 15px;
+  grid-template-columns: repeat(auto-fill, 250px);
+  justify-content: center;
+  margin-top: 50px;
+}
+
+/* Responsive */
+@media screen and (max-width: 1100px) {
+  .hero-form {
+    max-width: 800px;
+  }
+
+  .hero .hero-intro {
+    font-size: 28px;
+  }
+
+  .hero-stats-item span {
+    font-size: 17.92px;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .hero-form {
+    max-width: 610px;
+  }
+
+  .hero .hero-intro {
+    font-size: 23.8px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .hero {
+    max-width: 100%;
+    padding-top: 10px;
+  }
+
+  .hero .hero-intro {
+    font-size: 21px;
+  }
+
+  .hero-form-filter {
+    display: none;
+  }
+
+  .hero-stats {
+    margin-top: 30px;
+    gap: 20px;
+  }
+
+  .hero-stats-item span {
+    font-size: 15.4px;
+  }
+
+  .hero-cards {
+    margin-top: 30px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .hero-stats-item span {
+    font-size: 14px;
+  }
+}

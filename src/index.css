@@ -51,3 +51,23 @@ ul {
 .hidden {
   display: none;
 }
+
+/* Responsive */
+@media screen and (max-width: 1310px) {
+  .container {
+    max-width: 95%;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .container {
+    max-width: calc(100% - 80px);
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .container {
+    max-width: 100%;
+    padding: 0 10px;
+  }
+}
