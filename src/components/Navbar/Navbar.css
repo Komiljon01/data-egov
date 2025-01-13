@@ -1,0 +1,220 @@
+.navbar {
+  font-family: "Fira Sans", sans-serif;
+}
+
+/* Navbar start */
+.navbar-logo {
+  display: flex;
+  align-items: center;
+  color: #fff;
+  gap: 15px;
+}
+
+.navbar-logo span {
+  font-family: "Fira Sans", sans-serif;
+  width: 77px;
+  text-transform: uppercase;
+  font-weight: 500;
+  line-height: 130%;
+  letter-spacing: 0.004em;
+  color: #fefefe;
+}
+
+.navbar-menu {
+  display: none;
+}
+
+.navbar-menu-content {
+  position: relative;
+}
+
+.navbar-menu-content.MuiDrawer-root .MuiPaper-root {
+  width: 370px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  padding: 80px 50px;
+  background-color: #3369c7;
+  color: #fff;
+  font-size: 12px;
+  font-family: "Fira Sans", sans-serif;
+}
+
+.navbar-menu-close {
+  position: absolute;
+  top: 29px;
+  right: 30px;
+  font-size: 25px;
+  cursor: pointer;
+}
+
+/* Navbar center */
+.navbar-lists {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-lists a {
+  font-size: 14px;
+  line-height: 21px;
+  color: #fff;
+  transition: opacity 0.3s ease;
+  letter-spacing: 0.004em;
+  font-weight: 400;
+  padding: 0 16px;
+  text-wrap-mode: nowrap;
+}
+
+.navbar-lists a:hover {
+  opacity: 0.6;
+}
+
+/* Navbar end */
+.navbar-changer {
+  color: white;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.navbar-dropdown {
+  position: relative;
+  margin: 0 50px;
+}
+
+.navbar-dropdown-btn {
+  display: flex;
+  align-items: center;
+  color: #fff;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  font-size: 14px;
+  font-weight: 400;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  z-index: 10;
+}
+
+.navbar-dropdown-btn .navbar-dropdown-icon {
+  margin-left: 5px;
+}
+
+.navbar-dropdown-content {
+  display: none;
+  padding: 10px;
+  position: absolute;
+  top: 62px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #3369c7;
+  color: #fff;
+  font-size: 14px;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  flex-direction: column;
+  gap: 10px;
+  font-family: "Fira Sans", sans-serif;
+  z-index: 5;
+  height: auto;
+}
+
+.navbar-dropdown-content p {
+  cursor: pointer;
+}
+
+.navbar-dropdown:hover .navbar-dropdown-content,
+.navbar-dropdown-content:hover {
+  display: flex;
+  height: auto;
+  opacity: 1;
+}
+
+.navbar-login-modal.MuiDialog-root .MuiPaper-root {
+  width: 538px;
+  padding: 30px;
+  border-radius: 16px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  font-family: "Rubik", sans-serif;
+}
+
+.navbar-login-modal.MuiDialog-root .MuiPaper-root .dialog-close-btn {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 26px;
+  color: darkgray;
+  cursor: pointer;
+}
+
+.navbar-login-modal h3 {
+  font-size: 23.8px;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  font-weight: "Rubik", sans-serif;
+}
+
+.navbar-login-modal p {
+  font-weight: normal;
+}
+
+.navbar-login-model-btn.MuiButtonBase-root {
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-family: "Rubik", sans-serif;
+  background-color: #5a3bc8;
+  transition: background-color 0.3s ease;
+}
+
+.navbar-login-model-btn.MuiButtonBase-root:hover {
+  background-color: #4825c2;
+}
+
+.navbar-login-model-btn.MuiButtonBase-root span {
+  font-size: 14px;
+}
+
+/* Responsive */
+@media screen and (max-width: 1290px) {
+  .navbar-logo span {
+    display: none;
+  }
+
+  .navbar-dropdown {
+    margin: 0 30px;
+  }
+}
+
+@media screen and (max-width: 1025px) {
+  .navbar-menu {
+    display: block;
+  }
+
+  .navbar-lists {
+    display: none;
+  }
+
+  .navbar-end {
+    width: 85%;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .navbar-login.MuiButtonBase-root {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .navbar-changer {
+    display: none;
+  }
+
+  .navbar-end {
+    width: auto;
+  }
+}
