@@ -33,6 +33,7 @@
   color: #85a5dd;
   border-top: 1px solid rgba(48, 111, 221, 0.2);
   border-bottom: 1px solid rgba(48, 111, 221, 0.2);
+  background-color: #fff;
 }
 
 .hero-form button {
@@ -79,6 +80,29 @@
   grid-template-columns: repeat(auto-fill, 250px);
   justify-content: center;
   margin-top: 50px;
+}
+
+/* Home Datasets */
+.home-dataset {
+  margin: 80px 0;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  align-items: flex-start;
+}
+
+.home-dataset .home-dataset-title {
+  margin-bottom: 20px;
+  color: #000;
+  font-size: 23.8px;
+  font-family: "Rubik", sans-serif;
+  font-weight: normal;
+}
+
+.home-dataset > div {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
 }
 
 /* Responsive */
@@ -131,6 +155,10 @@
 
   .hero-cards {
     margin-top: 30px;
+  }
+
+  .home-dataset {
+    flex-direction: column;
   }
 }
 

@@ -1,0 +1,45 @@
+.dataset-card {
+  margin: 0 0 10px;
+  padding: 20px;
+  cursor: pointer;
+  transition: all 0.3s;
+  background: hsla(0, 0%, 100%, 0.8);
+  border: 1px solid rgba(48, 111, 221, 0.2);
+  border-left: 8px solid #2667dab3;
+  box-sizing: border-box;
+  border-radius: 8px;
+  min-height: 180px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.dataset-card:hover {
+  background-color: hsla(0, 0%, 100%, 0.6);
+  box-shadow: 0 7px 32px rgba(42, 82, 152, 0.2);
+}
+
+.dataset-card h5 {
+  font-family: "Rubik", sans-serif;
+  font-size: 16.8px;
+  letter-spacing: 0.002em;
+  color: #222;
+  opacity: 0.9;
+}
+
+.dataset-card p {
+  font-size: 14px;
+  letter-spacing: 0.004em;
+  font-family: "Fira Sans", sans-serif;
+  color: #3369c7;
+  font-weight: 400;
+}
+
+.dataset-card h6 {
+  font-size: 14px;
+  letter-spacing: 0.004em;
+  font-family: "Fira Sans", sans-serif;
+  color: rgba(34, 34, 34, 0.6);
+  opacity: 0.8;
+}

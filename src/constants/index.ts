@@ -5,6 +5,7 @@ import { FaLock } from "react-icons/fa6";
 import {
   HeroCardsTypes,
   HeroStatisticsTypes,
+  HeroTrendingDatasetTypes,
   SidebarElementsTypes,
 } from "../types";
 import { LuMessageCircleQuestion } from "react-icons/lu";
@@ -241,5 +242,64 @@ export const heroCards: HeroCardsTypes[] = [
     text: "Aral Sea region",
     count: "4173",
     icon: boatSVG,
+  },
+];
+
+export const HeroTopDatasets: HeroTrendingDatasetTypes[] = [
+  {
+    id: uuid4(),
+    text: "Computer tomography and monograph data (without personal identification)",
+    company: "Ministry of Health of the Republic of Uzbekistan",
+    date: "01-01-0001",
+    color: "light",
+  },
+  {
+    id: uuid4(),
+    text: "Public transport data",
+    company: "Ministry of Transport Republic of Uzbekistan",
+    date: "14-12-2022",
+    color: "light",
+  },
+  {
+    id: uuid4(),
+    text: "Information about the movement of passengers in buses and minibuses in the city of Tashkent",
+    company: "Ministry of Transport Republic of Uzbekistan",
+    date: "11-10-2024",
+    color: "light",
+  },
+  {
+    id: uuid4(),
+    text: "Structure of the gross domestic product of the Republic of Uzbekistan by type of economic activity. (as a percentage of the total)",
+    company: "State Statistics Committee of the Republic of Uzbekistan",
+    date: "11-11-2024",
+    color: "light",
+  },
+];
+
+export const HeroPopularDatasets: HeroTrendingDatasetTypes[] = [
+  {
+    id: uuid4(),
+    text: "Information about goods (works, services) that are planned to be purchased at the expense of Almalyk mining and metallurgical complex JSC",
+    company: "Almalyk mining and metallugical complex JSC",
+    date: "07-01-2025",
+  },
+  {
+    id: uuid4(),
+    text: "The list of certified professionals applying for participation in the field of conformity assessment as a staff",
+    company:
+      "Uzbek Agency for Technical Regulation under the Ministry of Investment, Industry and Trade of the Republic of Uzbekistan",
+    date: "30-10-2024",
+  },
+  {
+    id: uuid4(),
+    text: "Information on public procurement, including goods (works, services) purchased under direct contracts by public procurement entities of Almalyk mining and metallurgical complex JSC",
+    company: "Almalyk mining and metallugical complex JSC",
+    date: "11-01-2025",
+  },
+  {
+    id: uuid4(),
+    text: "Register of licenses for the commercial transportation of passengers and goods by road on urban, suburban, intercity and international routes",
+    company: "Ministry of Transport Republic of Uzbekistan",
+    date: "22-10-2024",
   },
 ];

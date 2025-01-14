@@ -22,3 +22,11 @@ export interface HeroCardsTypes {
   count: string;
   icon: SVGProps<SVGSVGElement>;
 }
+
+export interface HeroTrendingDatasetTypes {
+  id: string;
+  text: string;
+  company: string;
+  date: string;
+  color?: "light";
+}

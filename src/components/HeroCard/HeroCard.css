@@ -30,6 +30,10 @@
   padding: 7px 15px;
 }
 
+.hero-card-content.MuiCardContent-root:last-child {
+  padding-bottom: 7px;
+}
+
 .hero-card-img {
   position: absolute;
   width: 40px;
@@ -38,10 +42,10 @@
   right: 10px;
 }
 
-.hero-card-text {
+.hero-card .hero-card-text {
   font-size: 18.2px;
 }
 
-.hero-card-number {
+.hero-card .hero-card-number {
   font-size: 23.8px;
 }

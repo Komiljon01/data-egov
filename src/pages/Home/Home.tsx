@@ -9,8 +9,13 @@ import {
 import "./Home.css";
 import { VscSettings } from "react-icons/vsc";
 import { ChangeEvent, useRef } from "react";
-import { heroCards, heroStatistics } from "../../constants";
-import { HeroCard } from "../../components";
+import {
+  heroCards,
+  HeroPopularDatasets,
+  heroStatistics,
+  HeroTopDatasets,
+} from "../../constants";
+import { HeroCard, HeroDatasetCard } from "../../components";
 
 const CustomInput = styled(TextField)({
   ".MuiInputBase-root": {
@@ -69,70 +74,93 @@ function Home() {
   };
 
   return (
-    <Box component="section" className="hero">
-      <div className="container">
-        <Typography component="h3" className="hero-intro">
-          Open Data Portal of the Republic of Uzbekistan
-        </Typography>
+    <>
+      <Box component="section" className="hero">
+        <div className="container">
+          <Typography component="h3" className="hero-intro">
+            Open Data Portal of the Republic of Uzbekistan
+          </Typography>
 
-        <Box component="form" className="hero-form" onSubmit={onSearch}>
-          <CustomInput
-            type="text"
-            placeholder="Search in Open Data..."
-            required
-            fullWidth
-            inputRef={search}
-          />
-          <Box component="span" className="hero-form-filter">
-            <VscSettings />
+          <Box component="form" className="hero-form" onSubmit={onSearch}>
+            <CustomInput
+              type="text"
+              placeholder="Search in Open Data..."
+              required
+              fullWidth
+              inputRef={search}
+            />
+            <Box component="span" className="hero-form-filter">
+              <VscSettings />
+            </Box>
+            <Button variant="contained" disableElevation type="submit">
+              Find
+            </Button>
           </Box>
-          <Button variant="contained" disableElevation type="submit">
-            Find
-          </Button>
-        </Box>
 
-        <Stack
-          component="div"
-          className="hero-stats"
-          direction="row"
-          justifyContent="space-between"
-          alignItems="center"
-          flexWrap="wrap"
-        >
-          {heroStatistics.map((item) => {
-            const { id, color, statNum, text } = item;
+          <Stack
+            component="div"
+            className="hero-stats"
+            direction="row"
+            justifyContent="space-between"
+            alignItems="center"
+            flexWrap="wrap"
+          >
+            {heroStatistics.map((item) => {
+              const { id, color, statNum, text } = item;
 
-            return (
-              <Stack
-                direction="row"
-                gap="5px"
-                key={id}
-                className="hero-stats-item"
-              >
-                <Typography component="span" color="#222222cc">
-                  {text}
-                </Typography>
-                <Typography component="span" color="#222222cc">
-                  -
-                </Typography>
-                <Typography
-                  component="span"
-                  color={`${color === "red" ? "#b31d53" : "#3369c7"}`}
+              return (
+                <Stack
+                  direction="row"
+                  gap="5px"
+                  key={id}
+                  className="hero-stats-item"
                 >
-                  {statNum}
-                </Typography>
-              </Stack>
-            );
-          })}
-        </Stack>
+                  <Typography component="span" color="#222222cc">
+                    {text}
+                  </Typography>
+                  <Typography component="span" color="#222222cc">
+                    -
+                  </Typography>
+                  <Typography
+                    component="span"
+                    color={`${color === "red" ? "#b31d53" : "#3369c7"}`}
+                  >
+                    {statNum}
+                  </Typography>
+                </Stack>
+              );
+            })}
+          </Stack>
 
-        <Box component="div" className="hero-cards">
-          {heroCards.map((card) => (
-            <HeroCard key={card.id} card={card} />
+          <Box component="div" className="hero-cards">
+            {heroCards.map((card) => (
+              <HeroCard key={card.id} card={card} />
+            ))}
+          </Box>
+        </div>
+      </Box>
+
+      <Box component="section" className="home-dataset">
+        <Box component="div" className="home-top-dataset">
+          <Typography variant="h3" className="home-dataset-title">
+            Top data sets
+          </Typography>
+
+          {HeroTopDatasets.map((dataset) => (
+            <HeroDatasetCard key={dataset.id} dataset={dataset} />
           ))}
         </Box>
-      </div>
-    </Box>
+        <Box component="div" className="home-popular-dataset">
+          <Typography variant="h3" className="home-dataset-title">
+            Popular data sets
+          </Typography>
+
+          {HeroPopularDatasets.map((dataset) => (
+            <HeroDatasetCard key={dataset.id} dataset={dataset} />
+          ))}
+        </Box>
+      </Box>
+    </>
   );
 }
 
