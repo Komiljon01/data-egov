@@ -14,10 +14,16 @@ import {
   heroStatistics,
   HomeFreqDownloadStats,
   HomePopularDatasets,
+  HomeRequestData,
   HomeScopOfApplications,
   HomeTopDatasets,
 } from "../../constants";
-import { HeroCard, HeroDatasetCard, HomeDatasetStat } from "../../components";
+import {
+  HeroCard,
+  HeroDatasetCard,
+  HomeDatasetStat,
+  HomeRequest,
+} from "../../components";
 import { Link } from "react-router-dom";
 
 const CustomInput = styled(TextField)({
@@ -202,6 +208,29 @@ function Home() {
             {HomeScopOfApplications.map((data) => (
               <HomeDatasetStat key={data.id} data={data} />
             ))}
+          </Box>
+        </Box>
+      </Box>
+
+      <Box component="section" className="home-request">
+        <Stack
+          direction="row"
+          justifyContent="space-between"
+          alignItems="center"
+          gap="10px"
+          className="home-request-intro"
+        >
+          <Typography>Popular requests</Typography>
+          <Link to="/offers">All requests</Link>
+        </Stack>
+
+        <Box component="div" className="popular-requests-wrapper">
+          <Box component="table">
+            <Box component="tbody" className="popular-requests-body">
+              {HomeRequestData.map((request) => (
+                <HomeRequest key={request.id} request={request} />
+              ))}
+            </Box>
           </Box>
         </Box>
       </Box>

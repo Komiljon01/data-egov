@@ -38,3 +38,9 @@ export interface HomeDatasetStatsTypes {
   statNum: string;
   color: "blue" | "red";
 }
+
+export interface HomeRequestTypes {
+  id: string;
+  text: string;
+  reqNum: string;
+}

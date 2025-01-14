@@ -8,6 +8,7 @@ import {
   HomeTrendingDatasetTypes,
   HomeDatasetStatsTypes,
   SidebarElementsTypes,
+  HomeRequestTypes,
 } from "../types";
 import { LuMessageCircleQuestion } from "react-icons/lu";
 import { RiSurveyFill } from "react-icons/ri";
@@ -378,5 +379,23 @@ export const HomeScopOfApplications: HomeDatasetStatsTypes[] = [
     statNum: "37558",
     width: "68%",
     color: "red",
+  },
+];
+
+export const HomeRequestData: HomeRequestTypes[] = [
+  {
+    id: uuid4(),
+    text: "List of clinics in Tashkent",
+    reqNum: "629",
+  },
+  {
+    id: uuid4(),
+    text: "Information about agricultural land, including its outlines and boundaries",
+    reqNum: "10",
+  },
+  {
+    id: uuid4(),
+    text: "Distribution of Uzbekistan's external debt between states and international financial organizations",
+    reqNum: "9",
   },
 ];
