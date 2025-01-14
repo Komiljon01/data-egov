@@ -23,10 +23,18 @@ export interface HeroCardsTypes {
   icon: SVGProps<SVGSVGElement>;
 }
 
-export interface HeroTrendingDatasetTypes {
+export interface HomeTrendingDatasetTypes {
   id: string;
   text: string;
   company: string;
   date: string;
   color?: "light";
+}
+
+export interface HomeDatasetStatsTypes {
+  id: string;
+  text: string;
+  width: string;
+  statNum: string;
+  color: "blue" | "red";
 }

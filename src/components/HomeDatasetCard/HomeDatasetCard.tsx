@@ -1,12 +1,12 @@
 import { Box, Typography } from "@mui/material";
-import { HeroTrendingDatasetTypes } from "../../types";
-import "./HeroDatasetCard.css";
+import { HomeTrendingDatasetTypes } from "../../types";
+import "./HomeDatasetCard.css";
 
 interface Props {
-  dataset: HeroTrendingDatasetTypes;
+  dataset: HomeTrendingDatasetTypes;
 }
 
-function HeroDatasetCard({ dataset }: Props) {
+function HomeDatasetCard({ dataset }: Props) {
   const { text, company, date, color } = dataset;
 
   return (
@@ -22,4 +22,4 @@ function HeroDatasetCard({ dataset }: Props) {
   );
 }
 
-export default HeroDatasetCard;
+export default HomeDatasetCard;

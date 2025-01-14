@@ -93,6 +93,10 @@
 
 .home-dataset .home-dataset-title {
   margin-bottom: 20px;
+}
+
+.home-dataset .home-dataset-title,
+.hero-news-intro p {
   color: #000;
   font-size: 23.8px;
   font-family: "Rubik", sans-serif;
@@ -100,9 +104,44 @@
 }
 
 .home-dataset > div {
-  flex: 1;
   display: flex;
   flex-direction: column;
+  flex: 1;
+  width: 100%;
+}
+
+/* Home news */
+.home-news {
+  margin-bottom: 20px;
+}
+
+.hero-intro {
+  margin-bottom: 30px;
+}
+
+.hero-news-intro a {
+  font-family: "Rubik", sans-serif;
+  font-size: 14px;
+  letter-spacing: 0.002em;
+  color: #3369c7;
+}
+
+/* Home dataset stats */
+.home-dataset-wrapper {
+  border-radius: 8px;
+  padding: 20px;
+  letter-spacing: 0.004em;
+  background-color: #fff;
+}
+
+.home-dataset-readmore {
+  cursor: pointer;
+  text-align: right;
+  color: #408ec6;
+  font-family: "Fira Sans", regular;
+  font-size: 14px;
+  font-weight: normal;
+  opacity: 0.8;
 }
 
 /* Responsive */

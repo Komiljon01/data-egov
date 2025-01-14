@@ -1,0 +1,36 @@
+.home-dataset-stat {
+  padding: 10px;
+  border-radius: 8px;
+  margin-top: 0;
+  margin-bottom: 16px;
+  border-bottom: 1px solid rgba(34, 34, 34, 0.05);
+}
+
+.active-stat:hover {
+  cursor: pointer;
+  background-color: #eef4f8;
+}
+
+.home-dataset-stat .home-dataset-stat-title {
+  font-family: "Fira Sans", sans-serif;
+  color: #222;
+  max-width: 85%;
+  letter-spacing: 0.004em;
+  font-size: 14px;
+  font-weight: normal;
+}
+
+.home-dataset-stat .home-dataset-stat-number {
+  font-family: "Fira Sans", sans-serif;
+  opacity: 0.8;
+  font-weight: 500;
+}
+
+.home-dataset .dataset-percent {
+  display: block;
+  margin-top: 8px;
+  opacity: 0.8;
+  transition: all 0.3s ease;
+  border-radius: 4px;
+  height: 4px;
+}

@@ -5,7 +5,8 @@ import { FaLock } from "react-icons/fa6";
 import {
   HeroCardsTypes,
   HeroStatisticsTypes,
-  HeroTrendingDatasetTypes,
+  HomeTrendingDatasetTypes,
+  HomeDatasetStatsTypes,
   SidebarElementsTypes,
 } from "../types";
 import { LuMessageCircleQuestion } from "react-icons/lu";
@@ -245,7 +246,7 @@ export const heroCards: HeroCardsTypes[] = [
   },
 ];
 
-export const HeroTopDatasets: HeroTrendingDatasetTypes[] = [
+export const HomeTopDatasets: HomeTrendingDatasetTypes[] = [
   {
     id: uuid4(),
     text: "Computer tomography and monograph data (without personal identification)",
@@ -276,7 +277,7 @@ export const HeroTopDatasets: HeroTrendingDatasetTypes[] = [
   },
 ];
 
-export const HeroPopularDatasets: HeroTrendingDatasetTypes[] = [
+export const HomePopularDatasets: HomeTrendingDatasetTypes[] = [
   {
     id: uuid4(),
     text: "Information about goods (works, services) that are planned to be purchased at the expense of Almalyk mining and metallurgical complex JSC",
@@ -301,5 +302,81 @@ export const HeroPopularDatasets: HeroTrendingDatasetTypes[] = [
     text: "Register of licenses for the commercial transportation of passengers and goods by road on urban, suburban, intercity and international routes",
     company: "Ministry of Transport Republic of Uzbekistan",
     date: "22-10-2024",
+  },
+];
+
+export const HomeFreqDownloadStats: HomeDatasetStatsTypes[] = [
+  {
+    id: uuid4(),
+    text: "Information about goods (works, services) that are planned to be purchased at the expense of Almalyk mining and metallurgical complex JSC",
+    statNum: "9007",
+    width: "100%",
+    color: "blue",
+  },
+  {
+    id: uuid4(),
+    text: "The list of certified professionals applying for participation in the field of conformity assessment as a staff",
+    statNum: "8399",
+    width: "93%",
+    color: "blue",
+  },
+  {
+    id: uuid4(),
+    text: "The list of certified professionals applying for participation in the field of conformity assessment as a staffInformation on public procurement, including goods (works, services) purchased under direct contracts by public procurement entities of Almalyk mining and metallurgical complex JSC",
+    statNum: "5824",
+    width: "65%",
+    color: "blue",
+  },
+  {
+    id: uuid4(),
+    text: "Register of licenses for the commercial transportation of passengers and goods by road on urban, suburban, intercity and international routes",
+    statNum: "5741",
+    width: "64%",
+    color: "blue",
+  },
+  {
+    id: uuid4(),
+    text: "Information on existing vacancies",
+    statNum: "4978",
+    width: "55%",
+    color: "blue",
+  },
+];
+
+export const HomeScopOfApplications: HomeDatasetStatsTypes[] = [
+  {
+    id: uuid4(),
+    text: "MASS MEDIA",
+    statNum: "10368",
+    width: "19%",
+    color: "red",
+  },
+  {
+    id: uuid4(),
+    text: "Personal goals",
+    statNum: "47950",
+    width: "86%",
+    color: "red",
+  },
+  {
+    id: uuid4(),
+    text: "Application Development",
+    statNum: "10434",
+    width: "19%",
+    color: "red",
+  },
+  {
+    id: uuid4(),
+    text: "Research work",
+    statNum: "55602",
+    width: "100%",
+    color: "red",
+  },
+  {
+    id: uuid4(),
+    text: "Other",
+    statNum: "37558",
+    width: "68%",
+    color: "red",
   },
 ];

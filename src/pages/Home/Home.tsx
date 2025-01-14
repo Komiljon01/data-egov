@@ -11,11 +11,14 @@ import { VscSettings } from "react-icons/vsc";
 import { ChangeEvent, useRef } from "react";
 import {
   heroCards,
-  HeroPopularDatasets,
   heroStatistics,
-  HeroTopDatasets,
+  HomeFreqDownloadStats,
+  HomePopularDatasets,
+  HomeScopOfApplications,
+  HomeTopDatasets,
 } from "../../constants";
-import { HeroCard, HeroDatasetCard } from "../../components";
+import { HeroCard, HeroDatasetCard, HomeDatasetStat } from "../../components";
+import { Link } from "react-router-dom";
 
 const CustomInput = styled(TextField)({
   ".MuiInputBase-root": {
@@ -146,7 +149,7 @@ function Home() {
             Top data sets
           </Typography>
 
-          {HeroTopDatasets.map((dataset) => (
+          {HomeTopDatasets.map((dataset) => (
             <HeroDatasetCard key={dataset.id} dataset={dataset} />
           ))}
         </Box>
@@ -155,9 +158,51 @@ function Home() {
             Popular data sets
           </Typography>
 
-          {HeroPopularDatasets.map((dataset) => (
+          {HomePopularDatasets.map((dataset) => (
             <HeroDatasetCard key={dataset.id} dataset={dataset} />
           ))}
+        </Box>
+      </Box>
+
+      <Box component="section" className="home-news">
+        <Stack
+          direction="row"
+          justifyContent="space-between"
+          alignItems="center"
+          gap="10px"
+          className="hero-news-intro"
+        >
+          <Typography>Portal news</Typography>
+          <Link to="/news">All news</Link>
+        </Stack>
+      </Box>
+
+      <Box component="section" className="home-dataset">
+        <Box component="div">
+          <Typography variant="h3" className="home-dataset-title">
+            Frequently downloaded datasets
+          </Typography>
+
+          <Box component="div" className="home-dataset-wrapper">
+            {HomeFreqDownloadStats.map((data) => (
+              <HomeDatasetStat key={data.id} data={data} />
+            ))}
+
+            <Typography variant="subtitle1" className="home-dataset-readmore">
+              More details...
+            </Typography>
+          </Box>
+        </Box>
+        <Box component="div">
+          <Typography variant="h3" className="home-dataset-title">
+            Scope of application
+          </Typography>
+
+          <Box component="div" className="home-dataset-wrapper">
+            {HomeScopOfApplications.map((data) => (
+              <HomeDatasetStat key={data.id} data={data} />
+            ))}
+          </Box>
         </Box>
       </Box>
     </>
