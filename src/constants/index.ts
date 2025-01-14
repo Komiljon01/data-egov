@@ -9,6 +9,7 @@ import {
   HomeDatasetStatsTypes,
   SidebarElementsTypes,
   HomeRequestTypes,
+  FooterSiteNavigation,
 } from "../types";
 import { LuMessageCircleQuestion } from "react-icons/lu";
 import { RiSurveyFill } from "react-icons/ri";
@@ -397,5 +398,83 @@ export const HomeRequestData: HomeRequestTypes[] = [
     id: uuid4(),
     text: "Distribution of Uzbekistan's external debt between states and international financial organizations",
     reqNum: "9",
+  },
+];
+
+export const FooterPageLists: FooterSiteNavigation[] = [
+  {
+    id: uuid4(),
+    text: "About open data",
+    path: "/about-open-data",
+  },
+  {
+    id: uuid4(),
+    text: "About the portal",
+    path: "/about",
+  },
+  {
+    id: uuid4(),
+    text: "Terms of Use",
+    path: "/copyrights",
+  },
+  {
+    id: uuid4(),
+    text: "Legislative acts",
+    path: "/legislation",
+  },
+  {
+    id: uuid4(),
+    text: "Organizations",
+    path: "/organizations",
+  },
+  {
+    id: uuid4(),
+    text: "Monitoring",
+    path: "/monitoring",
+  },
+  {
+    id: uuid4(),
+    text: "Statistics",
+    path: "/statistics",
+  },
+  {
+    id: uuid4(),
+    text: "News",
+    path: "/news",
+  },
+  {
+    id: uuid4(),
+    text: "Events calendar",
+    path: "/calendar",
+  },
+  {
+    id: uuid4(),
+    text: "Real time data",
+    path: "/real-time",
+  },
+  {
+    id: uuid4(),
+    text: "Offers",
+    path: "/offers",
+  },
+  {
+    id: uuid4(),
+    text: "Instructions",
+    path: "/instructions",
+  },
+  {
+    id: uuid4(),
+    text: "Contact Us",
+    path: "/contacts",
+  },
+  {
+    id: uuid4(),
+    text: "FAQ",
+    path: "/faq",
+  },
+  {
+    id: uuid4(),
+    text: "Glossary",
+    path: "/glossary",
   },
 ];

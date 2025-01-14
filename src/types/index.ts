@@ -44,3 +44,9 @@ export interface HomeRequestTypes {
   text: string;
   reqNum: string;
 }
+
+export interface FooterSiteNavigation {
+  id: string;
+  text: string;
+  path: string;
+}

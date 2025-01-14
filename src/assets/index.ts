@@ -18,3 +18,6 @@ export { default as tradeSVG } from "./trade.svg";
 export { default as transportSVG } from "./transport.svg";
 export { default as turismSVG } from "./turism.svg";
 export { default as boatSVG } from "./boat.svg";
+export { default as certificateIMG } from "./certificate.png";
+export { default as vazirlikIMG } from "./vazirlik.png";
+export { default as egovSVG } from "./e-gov.svg";
