@@ -10,6 +10,7 @@ import {
   SidebarElementsTypes,
   HomeRequestTypes,
   FooterSiteNavigation,
+  HomeNewsTypes,
 } from "../types";
 import { LuMessageCircleQuestion } from "react-icons/lu";
 import { RiSurveyFill } from "react-icons/ri";
@@ -27,15 +28,21 @@ import {
   cultureSVG,
   economySVG,
   educationSVG,
+  hackatonIMG,
   heartSVG,
   insuranceSVG,
   lawSVG,
   leafSVG,
+  meetingStatIMG,
+  nationalStatAgencyIMG,
+  opendataIMG,
+  osceIMG,
   peopleSVG,
   territorySVG,
   tradeSVG,
   transportSVG,
   turismSVG,
+  webinarIMG,
 } from "../assets";
 
 export const leftSidebarElements: SidebarElementsTypes[] = [
@@ -380,6 +387,56 @@ export const HomeScopOfApplications: HomeDatasetStatsTypes[] = [
     statNum: "37558",
     width: "68%",
     color: "red",
+  },
+];
+
+export const HomeNewsData: HomeNewsTypes[] = [
+  {
+    id: uuid4(),
+    title: "The hackathon “Open Data Challenge 2024” will take place",
+    text: "From January 24 to 26, the Open Data Challenge hackathon will take place at the New Uzbekistan University. The event is organized by IT Park in collaboration with the OSCE Project Coordinator in Uzbekistan, with the support of the Statistics Agency and the Anti-Corruption Agency.",
+    date: "08-01-2025",
+    img: hackatonIMG,
+  },
+  {
+    id: uuid4(),
+    title:
+      "Results of fruitful cooperation with the OSCE Project Coordinator in Uzbekistan",
+    text: "The Statistics Agency under the President of the Republic of Uzbekistan has been cooperating with the office of the OSCE Project Co-ordinator in Uzbekistan in the development of an open data ecosystem since 2019.",
+    date: "24-12-2024",
+    img: osceIMG,
+  },
+  {
+    id: uuid4(),
+    title:
+      "Trainings were organized for employees responsible for ensuring openness in government authorities and departments",
+    text: "On December 2-11 of this year, the Statistics Agency under the President of the Republic of Uzbekistan organized training courses jointly with the OSCE Project Coordinator in Uzbekistan, the Technology Park of Software Products and Information Technologies (IT-Park) and the Anti-Corruption Agency.",
+    date: "16-12-2024",
+    img: opendataIMG,
+  },
+  {
+    id: uuid4(),
+    title:
+      "A meetings was organized for the delegation of Statistics Agency at the Statistics Poland",
+    text: "On October 9-10, 2024, a meeting was held for the staff of the Statistics Agency under the President of the Republic of Uzbekistan in Warsaw, Poland, for the purpose of sharing experience.",
+    date: "16-10-2024",
+    img: meetingStatIMG,
+  },
+  {
+    id: uuid4(),
+    title:
+      "Cooperation and exchange of experience with the National Statistics Agency of Canada",
+    text: "On August 26-30 this year, in Ottawa (Canada), with the support of the OSCE Project Coordinator's Office in Uzbekistan, representatives of the Statistics Agency under the President of the Republic of Uzbekistan visited the National Statistics Agency of Canada (Statistics Canada).",
+    date: "06-09-2024",
+    img: nationalStatAgencyIMG,
+  },
+  {
+    id: uuid4(),
+    title:
+      "International webinar on “Learning International Best Practices to Improve Open Gender Data in Uzbekistan”",
+    text: "On July 31 of this year, the Committee on Information Policy and Transparency in State Bodies of the Senate of the Oliy Majlis of the Republic of Uzbekistan, the Statistical Agency under the President of the Republic of Uzbekistan, the OSCE project Co-ordinator in Uzbekistan, the Open Data Watch, Open Data Charter and Women in Tech Uzbekistan, held an international webinar on the “Learning International Best Practices to Improve Open Gender Data in Uzbekistan”",
+    date: "01-08-2024",
+    img: webinarIMG,
   },
 ];
 

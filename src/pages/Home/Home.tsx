@@ -13,6 +13,7 @@ import {
   heroCards,
   heroStatistics,
   HomeFreqDownloadStats,
+  HomeNewsData,
   HomePopularDatasets,
   HomeRequestData,
   HomeScopOfApplications,
@@ -23,8 +24,12 @@ import {
   HeroDatasetCard,
   HomeDatasetStat,
   HomeRequest,
+  HomeSliderCard,
 } from "../../components";
 import { Link } from "react-router-dom";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import Slider from "react-slick";
 
 const CustomInput = styled(TextField)({
   ".MuiInputBase-root": {
@@ -82,6 +87,36 @@ function Home() {
     }
   };
 
+  const settings = {
+    dots: true,
+    infinite: true,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    arrows: false,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          dots: true,
+          infinite: true,
+          slidesToShow: 2,
+          slidesToScroll: 1,
+          arrows: false,
+        },
+      },
+      {
+        breakpoint: 767,
+        settings: {
+          dots: true,
+          infinite: true,
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          arrows: false,
+        },
+      },
+    ],
+  };
+
   return (
     <>
       <Box component="section" className="hero">
@@ -110,7 +145,7 @@ function Home() {
             component="div"
             className="hero-stats"
             direction="row"
-            justifyContent="space-between"
+            justifyContent="center"
             alignItems="center"
             flexWrap="wrap"
           >
@@ -181,6 +216,13 @@ function Home() {
           <Typography>Portal news</Typography>
           <Link to="/news">All news</Link>
         </Stack>
+        <Box component="div" className="news-slider slider-container">
+          <Slider {...settings}>
+            {HomeNewsData.map((news) => (
+              <HomeSliderCard key={news.id} news={news} />
+            ))}
+          </Slider>
+        </Box>
       </Box>
 
       <Box component="section" className="home-dataset">

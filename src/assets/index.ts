@@ -1,3 +1,4 @@
+// Icons
 export { default as adliyaSVG } from "./adliya.svg";
 export { default as agricultureSVG } from "./agriculture.svg";
 export { default as brmSVG } from "./brm.svg";
@@ -21,3 +22,11 @@ export { default as boatSVG } from "./boat.svg";
 export { default as certificateIMG } from "./certificate.png";
 export { default as vazirlikIMG } from "./vazirlik.png";
 export { default as egovSVG } from "./e-gov.svg";
+
+// News
+export { default as hackatonIMG } from "./news/hackaton.png";
+export { default as opendataIMG } from "./news/opendata.png";
+export { default as webinarIMG } from "./news/webinar.png";
+export { default as meetingStatIMG } from "./news/meeting-stat.jpg";
+export { default as osceIMG } from "./news/osce.jpg";
+export { default as nationalStatAgencyIMG } from "./news/national-stat-agency.jpg";

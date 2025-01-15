@@ -39,6 +39,14 @@ export interface HomeDatasetStatsTypes {
   color: "blue" | "red";
 }
 
+export interface HomeNewsTypes {
+  id: string;
+  title: string;
+  text: string;
+  date: string;
+  img: string;
+}
+
 export interface HomeRequestTypes {
   id: string;
   text: string;

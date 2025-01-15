@@ -133,7 +133,7 @@ function Footer() {
             </Box>
             <Box component="div">
               <Typography variant="body1">Tech. support:</Typography>
-              <Box component="a" href="+998555013606">
+              <Box component="a" href="tel:+998555013606">
                 (+998) 55-501-36-06 (1085)
               </Box>
             </Box>
