@@ -1,0 +1,197 @@
+{
+  "navbar": {
+    "logo": "Ochiq ma'lumotlar portali",
+    "navLink1": "Tashkilotlar",
+    "navLink2": "Yangiliklar",
+    "navLink3": "Monitoring",
+    "navLink4": "Statistika",
+    "navLink5": "SI ma'lumotlari",
+    "loginText": "Kirish",
+    "loginDialogTitle": "Shaxsiy saxifaga kirish",
+    "loginDialogText": "Tizimga One ID bilan kiring.",
+    "loginDialogBtnText": "Kirish"
+  },
+  "sidebarElements": {
+    "left": {
+      "text1": "Qonunchilik hujjatlari",
+      "text2": "Lug'at",
+      "text3": "Yo'riqnoma",
+      "text4": "Foydalanish shartlari"
+    },
+    "right": {
+      "text1": "Savol - javoblar",
+      "text2": "Foydalanuvchilar so'rovnomasi",
+      "text3": "Yangi ma'lumotlar so'rovi",
+      "text4": "Qayta aloqa"
+    },
+    "survey": {
+      "title": "Foydalanuvchilar so'rovnomasi",
+      "text": "Bizning saytimizga tashrif buyurganingiz uchun tashakkur. Uning faoliyatini yaxshilash uchun sayt haqida fikringizni kichik so'rovnoma bilan bilib olmoqchimiz. Sizning javoblaringiz to'liq anonim va faqat statistika uchun ishlatiladi.",
+      "remindme": "Keyinroq eslatish",
+      "btn": "So'rovdan o'tish"
+    },
+    "form": {
+      "title": "Qayta aloqa",
+      "successMessage": "Vaqtingiz uchun rahmat, sizning fikringiz biz uchun juda muhim va xizmatlarimiz sifatini yaxshilaydi",
+      "name": "F.I.Sh",
+      "namePlaceholder": "F.I.Sh ni kiriting",
+      "email": "E-mail",
+      "emailPlaceholder": "Elektron pochta manzilini kiriting",
+      "message": "Xabar",
+      "messagePlaceholder": "Xabarni kiriting",
+      "btn": "Yuborish",
+      "nameValidation1": "To'liq ism kamida 2 ta belgidan iborat bo'lishi kerak!",
+      "nameValidation2": "To'liq ism 20 belgidan kam bo'lishi kerak!",
+      "nameValidation3": "To'liq ism faqat harflar va bo'shliqlardan iborat bo'lishi kerak!",
+      "emailValidation": "Yaroqsiz elektron pochta manzili!",
+      "messageValidation1": "Xabar kamida 2 ta belgidan iborat bo'lishi kerak!",
+      "messageValidation2": "Xabar 100 belgidan kam bo'lishi kerak!"
+    }
+  },
+  "hero": {
+    "heroIntroText": "O'zbekiston Respublikasi ochiq ma'lumotlar portali",
+    "heroSearchPlaceholder": "Ochiq ma'lumotlardan qidirish...",
+    "heroSearchBtn": "Izlash",
+    "heroDatasetsText1": "Ma'lumotlar to'plamlari",
+    "heroDatasetsText2": "Tashkilotlar",
+    "heroDatasetsText3": "Yuklab olish",
+    "heroDatasetsText4": "Veb xizmat",
+    "cards": {
+      "text1": "Hudud",
+      "text2": "Iqtisodiyot",
+      "text3": "Sog'liqni saqlash",
+      "text4": "Ta'lim",
+      "text5": "Madaniyat",
+      "text6": "Biznes",
+      "text7": "Ko'chmas mulk",
+      "text8": "SDG",
+      "text9": "Turizm va sport",
+      "text10": "Sug'urta",
+      "text11": "Transport",
+      "text12": "Ekologiya",
+      "text13": "Aholi",
+      "text14": "Moliya",
+      "text15": "Savdo",
+      "text16": "Huquqbuzarlik",
+      "text17": "Qishloq xo'jaligi",
+      "text18": "AKT",
+      "text19": "Adolat va sudya",
+      "text20": "Orol dengizi mintaqasi"
+    }
+  },
+  "toast": {
+    "success": "Xabaringiz muvaffaqiyatli yuborildi!",
+    "formError": "Formada xatolik! Iltimos, maydonlarni tekshiring!"
+  },
+  "homeDataset": {
+    "leftTitle": "Eng dolzarb ma'lumotlar",
+    "rightTitle": "Eng mashhur ma'lumotlar",
+    "topDatasets": {
+      "text1": "Kompyuter tomografiyasi va monografiya ma'lumotlari (shaxsiy identifikatsiyasiz)",
+      "text2": "Jamoat transporti ma'lumotlari",
+      "text3": "Toshkent shahrida avtobus va mikroavtobuslarda yoʻlovchilar harakati toʻgʻrisida maʼlumot",
+      "text4": "O'zbekiston Respublikasi yalpi ichki mahsulotining iqtisodiy faoliyat turlari bo'yicha tarkibi. (jami foizda)",
+      "company1": "O‘zbekiston Respublikasi Sog‘liqni saqlash vazirligi",
+      "company2": "O‘zbekiston Respublikasi Transport vazirligi",
+      "company3": "O‘zbekiston Respublikasi Transport vazirligi",
+      "company4": "O‘zbekiston Respublikasi Davlat statistika qo‘mitasi"
+    },
+    "popularDatasets": {
+      "text1": "“Olmaliq kon-metallurgiya kombinati” AJ mablag‘lari hisobidan sotib olinishi rejalashtirilgan tovarlar (ishlar, xizmatlar) to‘g‘risidagi ma’lumotlar",
+      "text2": "Muvofiqlikni baholash sohasida xodimlar sifatida ishtirok etish uchun ariza topshirgan sertifikatlangan mutaxassislar ro'yxati",
+      "text3": "“Olmaliq kon-metallurgiya kombinati” AJ davlat xaridlari sub’ektlari tomonidan to‘g‘ridan-to‘g‘ri shartnomalar bo‘yicha sotib olingan tovarlar (ishlar, xizmatlar) to‘g‘risidagi ma’lumotlar",
+      "text4": "Shahar, shahar atrofi, shaharlararo va xalqaro yo‘nalishlarda avtomobil transportida yo‘lovchilar va yuklarni tijoriy tashish uchun litsenziyalar reestri.",
+      "company1": "“Olmaliq kon-metallurgiya kombinati” AJ",
+      "company2": "O‘zbekiston Respublikasi Investitsiyalar, sanoat va savdo vazirligi huzuridagi O‘zbekiston Texnik jihatdan tartibga solish agentligi",
+      "company3": "“Olmaliq kon-metallurgiya kombinati” AJ",
+      "company4": "Oʻzbekiston Respublikasi Transport vazirligi"
+    },
+    "cardDateTitle": "Yangilangan"
+  },
+  "homeNews": {
+    "introTitle": "Portal yangiliklari",
+    "introBtn": "Barcha yangiliklar",
+    "datas": {
+      "title1": "“Open Data Challenge 2024” hakatoni boʻlib oʻtadi",
+      "title2": "YeXHTning O‘zbekistondagi loyihalari koordinatori bilan samarali hamkorlik natijalari",
+      "title3": "Davlat hokimiyati va boshqaruvi organlari va idoralarida ochiqlikni ta’minlashga mas’ul xodimlar uchun treninglar tashkil etildi",
+      "title4": "Polsha Statistika boshqarmasida Statistika agentligi delegatsiyasi uchun uchrashuv tashkil etildi",
+      "title5": "Kanada Milliy statistika agentligi bilan hamkorlik va tajriba almashish",
+      "title6": "“O‘zbekistonda ochiq gender ma’lumotlarini takomillashtirish bo‘yicha ilg‘or xalqaro tajribalarni o‘rganish” mavzusidagi xalqaro vebinar",
+      "text1": "24-26 yanvar kunlari Yangi O‘zbekiston universitetida Open Data Challenge hakatoni bo‘lib o‘tadi. Tadbir IT Park tomonidan YeXHTning O‘zbekistondagi loyihalari koordinatori bilan hamkorlikda, Statistika agentligi va Korrupsiyaga qarshi kurash agentligi ko‘magida tashkil etildi.",
+      "text2": "O‘zbekiston Respublikasi Prezidenti huzuridagi Statistika agentligi YeXHTning O‘zbekistondagi loyihalari koordinatori ofisi bilan ochiq ma’lumotlar ekotizimini rivojlantirish bo‘yicha 2019-yildan buyon hamkorlik qilib kelmoqda.",
+      "text3": "Joriy yilning 2-11 dekabr kunlari O‘zbekiston Respublikasi Prezidenti huzuridagi Statistika agentligi tomonidan YeXHTning O‘zbekistondagi loyihalari koordinatori, Dasturiy mahsulotlar va axborot texnologiyalari texnologiyalari parki (IT-Park) hamda “Axborot texnologiyalari parki” (IT-Park) bilan hamkorlikda o‘quv kurslari tashkil etildi. Korruptsiya agentligi.",
+      "text4": "2024-yil 9-10-oktabr kunlari Polshaning Varshava shahrida O‘zbekiston Respublikasi Prezidenti huzuridagi Statistika agentligi xodimlari uchun tajriba almashish maqsadida uchrashuv bo‘lib o‘tdi.",
+      "text5": "Joriy yilning 26-30 avgust kunlari Ottava shahrida (Kanada) Yevropada xavfsizlik va hamkorlik tashkilotining O‘zbekistondagi loyihalari muvofiqlashtiruvchi ofisi ko‘magida O‘zbekiston Respublikasi Prezidenti huzuridagi Statistika agentligi vakillari Kanada Milliy statistika agentligiga (Statistics Canada) tashrif buyurishdi. .",
+      "text6": "Joriy yilning 31 iyul kuni O‘zbekiston Respublikasi Oliy Majlisi Senatining Axborot siyosati va davlat organlari faoliyatining ochiqligi qo‘mitasi, O‘zbekiston Respublikasi Prezidenti huzuridagi Statistika agentligi, YeXHTning O‘zbekistondagi loyihalari muvofiqlashtiruvchisi , Open Data Watch, Open Data Charter and Women in Tech Uzbekistan “O‘zbekistonda ochiq gender ma’lumotlarini takomillashtirish bo‘yicha ilg‘or xalqaro tajribalarni o‘rganish” mavzusida xalqaro vebinar o‘tkazdi."
+    },
+    "readmore": "Batafsil..."
+  },
+  "homeDatasetStats": {
+    "freqDownloads": {
+      "title": "Tez-tez yuklab olinadigan ma'lumotlar to'plami",
+      "text1": "“Olmaliq kon-metallurgiya kombinati” AJ mablag‘lari hisobidan sotib olinishi rejalashtirilgan tovarlar (ishlar, xizmatlar) to‘g‘risidagi ma’lumotlar",
+      "text2": "Muvofiqlikni baholash sohasida xodimlar sifatida ishtirok etish uchun ariza topshirgan sertifikatlangan mutaxassislar ro'yxati",
+      "text3": "“Olmaliq kon-metallurgiya kombinati” AJ davlat xaridlari sub’yektlari tomonidan to‘g‘ridan-to‘g‘ri shartnomalar bo‘yicha xarid qilinadigan tovarlar (ishlar, xizmatlar)ni o‘z ichiga olgan davlat xaridlari to‘g‘risida kadrlar sifatida ishtirok etish uchun ariza beruvchi sertifikatlangan mutaxassislar ro‘yxati",
+      "text4": "Shahar, shahar atrofi, shaharlararo va xalqaro yo‘nalishlarda avtomobil transportida yo‘lovchilar va yuklarni tijoriy tashish uchun litsenziyalar reestri.",
+      "text5": "Mavjud bo'sh ish o'rinlari haqida ma'lumot"
+    },
+    "scopOfAppl": {
+      "title": "Qo'llash doirasi",
+      "text1": "OAV",
+      "text2": "Shaxsiy maqsadlar",
+      "text3": "Ilovalarni ishlab chiqish",
+      "text4": "Tadqiqot ishi",
+      "text5": "Boshqa"
+    },
+    "readmore": "Batafsil..."
+  },
+  "homeRequests": {
+    "title": "Mashhur so'rovlar",
+    "allRequests": "Barcha so'rovlar",
+    "table": {
+      "text1": "Toshkentdagi klinikalar ro'yxati",
+      "text2": "Qishloq xo‘jaligi ekin maydonlari, shu jumladan ularning konturlari va chegaralari to‘g‘risidagi ma’lumotlar",
+      "text3": "O‘zbekistonning davlatlararo va xalqaro moliya tashkilotlari kesimidagi tashqi qarzi taqsimoti",
+      "vote": "Ovoz berish"
+    }
+  },
+  "footer": {
+    "logoPart": {
+      "logoText": "Ochiq ma'lumotlar portali",
+      "copyrights": "Barcha huquqlar himoyalangan"
+    },
+    "contacts": {
+      "title": "Kontaktlar",
+      "agency": "O‘zbekiston Respublikasi Davlat statistika qo‘mitasi:",
+      "support": "Tex. qo'llab-quvvatlash:",
+      "email": "Email:",
+      "address": "Manzil:"
+    },
+    "footerLists": {
+      "title": "Sayt xaritasi",
+      "link1": "Ochiq ma'lumotlar haqida",
+      "link2": "Portal haqida",
+      "link3": "Foydalanish shartlari",
+      "link4": "Qonunchilik hujjatlari",
+      "link5": "Tashkilotlar",
+      "link6": "Monitoring",
+      "link7": "Statistika",
+      "link8": "Yangiliklar",
+      "link9": "Tadbirlar taqvimi",
+      "link10": "Real vaqtdagi ma'lumotlar",
+      "link11": "Takliflar",
+      "link12": "Yo'riqnoma",
+      "link13": "Qayta aloqa",
+      "link14": "Savol - javoblar",
+      "link15": "Lug'at"
+    },
+    "useful": {
+      "title": "Foydali havolalar"
+    },
+    "footerTerms": {
+      "title": "Sayt materiallaridan to'liq yoki qisman foydalanganda saytga havola kerak",
+      "text": "Sayt “Elektron hukumat” loyihalarini boshqarish markazi tomonidan ishlab chiqilgan"
+    }
+  }
+}

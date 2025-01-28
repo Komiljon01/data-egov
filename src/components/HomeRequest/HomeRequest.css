@@ -1,5 +1,5 @@
 .home-request-item .home-request-title {
-  font-family: "Fira Sans", sans-serif;
+  font-family: "FiraSans-Regular";
   font-weight: 500;
   font-size: 15.96px;
   line-height: 150%;
@@ -20,7 +20,7 @@
 
 .home-request-item .home-request-num {
   text-align: center;
-  font-family: "Fira Sans", sans-serif;
+  font-family: "FiraSans-Regular";
   font-size: 14px;
   color: #3369c7;
   padding: 20px 40px;
@@ -36,7 +36,7 @@
   padding: 6px 20px;
   background: #3369c7;
   border-radius: 8px;
-  font-family: "Fira Sans", sans-serif;
+  font-family: "FiraSans-SemiBold";
   display: flex;
   align-items: center;
   letter-spacing: 0.004em;
@@ -46,6 +46,7 @@
   cursor: pointer;
   transition: 0.3s;
   font-size: 13.333px;
+  text-transform: initial;
 }
 
 .home-request-item button.MuiButtonBase-root:hover {

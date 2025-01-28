@@ -19,7 +19,6 @@
 
 .news-item-content {
   padding: 16px;
-  font-family: "Fira Sans", sans-serif;
   background-color: #fff;
 }
 
@@ -33,6 +32,7 @@
   line-clamp: 3;
   -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
+  font-family: "FiraSans-Regular";
 }
 
 .news-item-content .news-item-text {
@@ -45,18 +45,21 @@
   font-size: 14px;
   letter-spacing: 0.004em;
   opacity: 0.6;
+  font-family: "FiraSans-Regular";
 }
 
 .news-item-content .news-item-date {
   color: rgba(34, 34, 34, 0.6);
   opacity: 0.8;
   font-size: 14px;
+  font-family: "FiraSans-Regular";
 }
 
 .news-item-content .news-item-read-more {
   color: #408ec6;
   font-size: 14px;
   cursor: pointer;
+  font-family: "FiraSans-Regular";
 }
 
 @media screen and (max-width: 500px) {

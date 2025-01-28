@@ -1,6 +1,13 @@
 import { SVGProps } from "react";
 import { IconType } from "react-icons";
 
+export enum Language {
+  Uzbek = "uz",
+  UzbekKiril = "uzKr",
+  English = "eng",
+  Russian = "rus",
+}
+
 export interface SidebarElementsTypes {
   id: string;
   path?: string;

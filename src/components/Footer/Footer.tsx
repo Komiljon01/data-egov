@@ -5,8 +5,11 @@ import { FaFacebookF, FaInstagram, FaYoutube } from "react-icons/fa6";
 import { FaTelegramPlane } from "react-icons/fa";
 import { certificateIMG, egovSVG, vazirlikIMG } from "../../assets";
 import { FooterPageLists } from "../../constants";
+import { useTranslation } from "react-i18next";
 
 function Footer() {
+  const { t } = useTranslation();
+
   return (
     <Box component="div" className="footer">
       <div className="container">
@@ -68,11 +71,11 @@ function Footer() {
                 ></path>
               </svg>
 
-              <Box component="span">Open data portal</Box>
+              <Box component="span">{t("footer.logoPart.logoText")}</Box>
             </Link>
 
             <Typography variant="body1" className="footer-copyrights">
-              &copy; 2015-2025 All rights reserved
+              &copy; 2015-2025 {t("footer.logoPart.copyrights")}
             </Typography>
             <Stack
               direction="row"
@@ -121,30 +124,36 @@ function Footer() {
           </Box>
 
           <Box component="ul" className="footer-messages">
-            <Typography variant="h3">Messages</Typography>
+            <Typography variant="h3">{t("footer.contacts.title")}</Typography>
 
             <Box component="div">
               <Typography variant="body1">
-                State Committee of the Republic of Uzbekistan on Statistics:
+                {t("footer.contacts.agency")}
               </Typography>
               <Box component="a" href="tel:+998712028060">
                 (+998) 71-202-80-60
               </Box>
             </Box>
             <Box component="div">
-              <Typography variant="body1">Tech. support:</Typography>
+              <Typography variant="body1">
+                {t("footer.contacts.support")}
+              </Typography>
               <Box component="a" href="tel:+998555013606">
                 (+998) 55-501-36-06 (1085)
               </Box>
             </Box>
             <Box component="div">
-              <Typography variant="body1">Email:</Typography>
+              <Typography variant="body1">
+                {t("footer.contacts.email")}
+              </Typography>
               <Box component="a" href="mailto:opendata@egov.uz">
                 opendata@egov.uz
               </Box>
             </Box>
             <Box component="div">
-              <Typography variant="body1">Address:</Typography>
+              <Typography variant="body1">
+                {t("footer.contacts.address")}
+              </Typography>
               <Typography variant="body2">
                 100170, Toshkent sh., Mustаqillik shoh ko‘chаsi, 63
               </Typography>
@@ -152,21 +161,23 @@ function Footer() {
           </Box>
 
           <Box component="ul" className="footer-site-navigation">
-            <Typography variant="h3">Site navigation</Typography>
+            <Typography variant="h3">
+              {t("footer.footerLists.title")}
+            </Typography>
 
             {FooterPageLists.map((link) => {
               const { id, path, text } = link;
 
               return (
                 <Box component="div" key={id}>
-                  <Link to={path}>{text}</Link>
+                  <Link to={path}>{t(text)}</Link>
                 </Box>
               );
             })}
           </Box>
 
           <Box component="ul" className="footer-useful-links">
-            <Typography variant="h3">Useful links</Typography>
+            <Typography variant="h3">{t("footer.useful.title")}</Typography>
 
             <Box component="a" href="https://egov.uz" target="_blank">
               egov.uz
@@ -184,15 +195,18 @@ function Footer() {
 
           <Box component="ul" className="footer-terms">
             <Typography variant="h4">
-              When using the site materials in whole or in part, a link to the
-              site is required
+              {t("footer.footerTerms.title")}
             </Typography>
 
-            <Stack direction="row" alignItems="center" gap="12px" className="footer-terms-govern">
+            <Stack
+              direction="row"
+              alignItems="center"
+              gap="12px"
+              className="footer-terms-govern"
+            >
               <Box component="img" src={egovSVG} alt="e-government image" />
               <Typography variant="body1">
-                The site was developed by the E-Government Project Management
-                Center
+                {t("footer.footerTerms.text")}
               </Typography>
             </Stack>
 
@@ -209,11 +223,3 @@ function Footer() {
 }
 
 export default Footer;
-
-/* 
-
-egov.uz
-id.egov.uz
-cs.egov.uz
-reestr.uz
-*/

@@ -1,12 +1,24 @@
-import { Box, Button, Dialog, Drawer, List, Slide, Stack } from "@mui/material";
+import {
+  Box,
+  Button,
+  Dialog,
+  Drawer,
+  List,
+  MenuItem,
+  Select,
+  SelectChangeEvent,
+  Slide,
+  Stack,
+} from "@mui/material";
 import "./Navbar.css";
 import { Link } from "react-router-dom";
 import NavbarLists from "../NavbarLists/NavbarLists";
 import { FaCaretDown, FaSortDown, FaXmark } from "react-icons/fa6";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { TransitionProps } from "@mui/material/transitions";
 import OneIDImg from "../../assets/oneid.svg";
 import { FaUserAlt } from "react-icons/fa";
+import { useTranslation } from "react-i18next";
 
 const Transition = React.forwardRef(function Transition(
   props: TransitionProps & {
@@ -19,18 +31,23 @@ const Transition = React.forwardRef(function Transition(
 
 function Navbar() {
   const [open, setOpen] = useState(false);
-  const [selectedLanguage, setSelectedLanguage] = useState<string>("English");
+  const { t, i18n } = useTranslation();
+  const [language, setLanguage] = useState(
+    localStorage.getItem("i18nextLng") || "uz"
+  );
+
+  const languages = [
+    { value: "uz", label: "O'zbekcha" },
+    { value: "uzKr", label: "Ўзбекча" },
+    { value: "eng", label: "English" },
+    { value: "rus", label: "Русский" },
+  ];
 
   const [openMenu, setOpenMenu] = useState(false);
+  console.log(i18n.language, "language");
 
   const toggleDrawer = (newOpen: boolean) => () => {
     setOpenMenu(newOpen);
-  };
-
-  const languages = ["O'zbekcha", "Ўзбекча", "Русский", "English"];
-
-  const handleChangeLanguage = (value: string) => {
-    setSelectedLanguage(value);
   };
 
   const handleClickOpen = () => {
@@ -40,6 +57,20 @@ function Navbar() {
   const handleClose = () => {
     setOpen(false);
   };
+
+  const onChangeLang = (e: SelectChangeEvent<string>): void => {
+    const value = e.target.value;
+    console.log("Selected language:", value);
+    setLanguage(value);
+    i18n.changeLanguage(value);
+    localStorage.setItem("i18nextLng", value);
+  };
+
+  useEffect(() => {
+    const langFromLocalStorage = localStorage.getItem("i18nextLng") || "uz";
+    i18n.changeLanguage(langFromLocalStorage);
+    setLanguage(langFromLocalStorage);
+  }, []);
 
   return (
     <Box component="nav" className="navbar" bgcolor="#3369c7" p="0 16px">
@@ -108,7 +139,7 @@ function Navbar() {
                 ></path>
               </svg>
 
-              <Box component="span">Open data portal</Box>
+              <Box component="span">{t("navbar.logo")}</Box>
 
               <Box
                 content="span"
@@ -166,29 +197,25 @@ function Navbar() {
               justifyContent="space-between"
               alignItems="center"
             >
-              <Box component="div" className="navbar-dropdown">
-                <button className="navbar-dropdown-btn">
-                  {selectedLanguage}{" "}
-                  <FaCaretDown className="navbar-dropdown-icon" />
-                </button>
+              <Select
+                value={language}
+                onChange={onChangeLang}
+                className="navbar-lang-changer"
+                variant="standard"
+                disableUnderline
+                IconComponent={FaCaretDown}
+              >
+                {languages.map((item, id) => (
+                  <MenuItem value={item.value} key={id}>
+                    {item.label}
+                  </MenuItem>
+                ))}
+              </Select>
 
-                <Box className="navbar-dropdown-content">
-                  {languages
-                    .filter((lang) => lang !== selectedLanguage)
-                    .slice(0, 3)
-                    .map((item, idx) => (
-                      <p
-                        key={idx}
-                        className={`${
-                          selectedLanguage === item ? "hidden" : ""
-                        }`}
-                        onClick={() => handleChangeLanguage(item)}
-                      >
-                        {item}
-                      </p>
-                    ))}
-                </Box>
-              </Box>
+              {/* <MenuItem value="uz">O'zbekcha</MenuItem>
+                <MenuItem value="uzKr">Ўзбекча</MenuItem>
+                <MenuItem value="eng">English</MenuItem>
+                <MenuItem value="rus">Русский</MenuItem> */}
 
               <Button
                 onClick={handleClickOpen}
@@ -205,7 +232,7 @@ function Navbar() {
                 className="navbar-login"
               >
                 <FaUserAlt fontSize="20px" />
-                Log in
+                {t("navbar.loginText")}
               </Button>
               <Dialog
                 open={open}
@@ -215,8 +242,8 @@ function Navbar() {
                 className="navbar-login-modal"
               >
                 <FaXmark onClick={handleClose} className="dialog-close-btn" />
-                <h3>Log in to your personal account</h3>
-                <p>To log in, log in with One ID.</p>
+                <h3>{t("navbar.loginDialogTitle")}</h3>
+                <p>{t("navbar.loginDialogText")}</p>
                 <Button
                   disableElevation
                   disableFocusRipple
@@ -226,7 +253,7 @@ function Navbar() {
                   className="navbar-login-model-btn"
                   onClick={handleClose}
                 >
-                  <span>Log in with</span>
+                  <span>{t("navbar.loginDialogBtnText")}</span>
                   <Box component="img" src={OneIDImg} />
                 </Button>
               </Dialog>

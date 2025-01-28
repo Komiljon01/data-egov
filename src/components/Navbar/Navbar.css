@@ -1,5 +1,5 @@
 .navbar {
-  font-family: "Fira Sans", sans-serif;
+  font-family: "FiraSans-Regular";
 }
 
 /* Navbar start */
@@ -11,7 +11,6 @@
 }
 
 .navbar-logo span {
-  font-family: "Fira Sans", sans-serif;
   width: 77px;
   text-transform: uppercase;
   font-weight: 500;
@@ -37,7 +36,7 @@
   background-color: #3369c7;
   color: #fff;
   font-size: 12px;
-  font-family: "Fira Sans", sans-serif;
+  font-family: "FiraSans-Regular";
 }
 
 .navbar-menu-close {
@@ -76,57 +75,18 @@
   cursor: pointer;
 }
 
-.navbar-dropdown {
-  position: relative;
+.navbar-lang-changer {
+  border: none;
   margin: 0 50px;
 }
 
-.navbar-dropdown-btn {
-  display: flex;
-  align-items: center;
+.navbar-lang-changer .MuiSelect-icon {
   color: #fff;
-  background-color: transparent;
-  border: none;
-  outline: none;
-  font-size: 14px;
-  font-weight: 400;
-  cursor: pointer;
-  transition: all 0.3s ease;
-  z-index: 10;
 }
 
-.navbar-dropdown-btn .navbar-dropdown-icon {
-  margin-left: 5px;
-}
-
-.navbar-dropdown-content {
-  display: none;
-  padding: 10px;
-  position: absolute;
-  top: 62px;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  background-color: #3369c7;
+.navbar-lang-changer.MuiInput-root {
   color: #fff;
   font-size: 14px;
-  border-bottom-right-radius: 10px;
-  border-bottom-left-radius: 10px;
-  flex-direction: column;
-  gap: 10px;
-  font-family: "Fira Sans", sans-serif;
-  z-index: 5;
-  height: auto;
-}
-
-.navbar-dropdown-content p {
-  cursor: pointer;
-}
-
-.navbar-dropdown:hover .navbar-dropdown-content,
-.navbar-dropdown-content:hover {
-  display: flex;
-  height: auto;
-  opacity: 1;
 }
 
 .navbar-login-modal.MuiDialog-root .MuiPaper-root {
@@ -137,7 +97,7 @@
   display: flex;
   flex-direction: column;
   gap: 30px;
-  font-family: "Rubik", sans-serif;
+  font-family: "Rubik-Medium";
 }
 
 .navbar-login-modal.MuiDialog-root .MuiPaper-root .dialog-close-btn {
@@ -153,11 +113,12 @@
   font-size: 23.8px;
   font-weight: 500;
   letter-spacing: 0.5px;
-  font-weight: "Rubik", sans-serif;
+  font-family: "Rubik-Medium";
 }
 
 .navbar-login-modal p {
   font-weight: normal;
+  font-family: "Rubik-Regular";
 }
 
 .navbar-login-model-btn.MuiButtonBase-root {
@@ -165,9 +126,10 @@
   display: flex;
   align-items: center;
   gap: 10px;
-  font-family: "Rubik", sans-serif;
+  font-family: "Rubik-Medium";
   background-color: #5a3bc8;
   transition: background-color 0.3s ease;
+  text-transform: initial;
 }
 
 .navbar-login-model-btn.MuiButtonBase-root:hover {
@@ -182,10 +144,6 @@
 @media screen and (max-width: 1290px) {
   .navbar-logo span {
     display: none;
-  }
-
-  .navbar-dropdown {
-    margin: 0 30px;
   }
 }
 

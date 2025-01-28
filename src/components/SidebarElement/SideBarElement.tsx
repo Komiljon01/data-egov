@@ -9,6 +9,7 @@ import React, { ChangeEvent, useState } from "react";
 import { Box, Divider, styled, TextField, Typography } from "@mui/material";
 import { FaXmark } from "react-icons/fa6";
 import { toast } from "sonner";
+import { useTranslation } from "react-i18next";
 
 interface Props {
   sidebarEl: SidebarElementsTypes;
@@ -81,6 +82,8 @@ function SideBarElement({ sidebarEl }: Props) {
   const [openSurveyModal, setOpenSurveyModal] = useState(false);
   const [openContactsForm, setOpenContactsForm] = useState(false);
 
+  const { t } = useTranslation();
+
   const closeModal = () => {
     if (openSurveyModal) setOpenSurveyModal(false);
     if (openContactsForm) {
@@ -106,11 +109,11 @@ function SideBarElement({ sidebarEl }: Props) {
     setFullName(value);
 
     if (value.trim().length < 2) {
-      setFullNameError(`Full name must be at least 2 characters.`);
+      setFullNameError(t("sidebarElements.form.nameValidation1"));
     } else if (value.trim().length > 20) {
-      setFullNameError(`Full name must be less than 20 characters`);
+      setFullNameError(t("sidebarElements.form.nameValidation2"));
     } else if (!/^[a-zA-Z ]+$/.test(value)) {
-      setFullNameError(`Full name must contain only letters and spaces`);
+      setFullNameError(t("sidebarElements.form.nameValidation3"));
     } else {
       setFullNameError(false);
     }
@@ -121,7 +124,7 @@ function SideBarElement({ sidebarEl }: Props) {
     setEmail(value);
 
     if (!/^((?!\.)[\w\-_.]*[^.])(@\w+)(\.\w+(\.\w+)?[^.\W])$/gm.test(value)) {
-      setEmailError("Invalid email address");
+      setEmailError(t("sidebarElements.form.emailValidation"));
     } else {
       setEmailError(false);
     }
@@ -132,9 +135,9 @@ function SideBarElement({ sidebarEl }: Props) {
     setMessage(value);
 
     if (value.trim().length < 2) {
-      setMessageError(`Message must be at least 2 characters.`);
+      setMessageError(t("sidebarElements.form.messageValidation1"));
     } else if (value.trim().length > 100) {
-      setMessageError(`Message must be less than 100 characters`);
+      setMessageError(t("sidebarElements.form.messageValidation1"));
     } else {
       setMessageError(false);
     }
@@ -151,13 +154,13 @@ function SideBarElement({ sidebarEl }: Props) {
       email &&
       message
     ) {
-      toast.success("Your message is send successfully!", {
+      toast.success(t("toast.success"), {
         duration: 3000,
       });
       setSuccessMessage(true);
       clearForm();
     } else {
-      toast.error("Form is invalid! Please check the fields!");
+      toast.error(t("toast.formError"));
     }
   };
 
@@ -166,7 +169,7 @@ function SideBarElement({ sidebarEl }: Props) {
     <div className="sidebar-el">
       {type === "link" && (
         <Link to={path as string} className="sidebar-el-wrapper">
-          <span className="sidebar-el-text">{text}</span>
+          <span className="sidebar-el-text">{t(text)}</span>
           <span className="sidebar-el-icon">{Icon && <Icon />}</span>
         </Link>
       )}
@@ -176,7 +179,7 @@ function SideBarElement({ sidebarEl }: Props) {
           className="sidebar-el-wrapper"
           onClick={() => setOpenSurveyModal(true)}
         >
-          <span className="sidebar-el-text">{text}</span>
+          <span className="sidebar-el-text">{t(text)}</span>
           <span className="sidebar-el-icon">{Icon && <Icon />}</span>
         </div>
       )}
@@ -186,7 +189,7 @@ function SideBarElement({ sidebarEl }: Props) {
           className="sidebar-el-wrapper"
           onClick={() => setOpenContactsForm(true)}
         >
-          <span className="sidebar-el-text">{text}</span>
+          <span className="sidebar-el-text">{t(text)}</span>
           <span className="sidebar-el-icon">{Icon && <Icon />}</span>
         </div>
       )}
@@ -203,13 +206,10 @@ function SideBarElement({ sidebarEl }: Props) {
         {openSurveyModal && (
           <>
             <Typography variant="h3" className="sidebar-survey-title">
-              Foydalanuvchilar so'rovnomasi
+              {t("sidebarElements.survey.title")}
             </Typography>
             <Typography variant="body1" className="sidebar-survey-text">
-              Bizning saytimizga tashrif buyurganingiz uchun tashakkur. Uning
-              faoliyatini yaxshilash uchun sayt haqida fikringizni kichik
-              so'rovnoma bilan bilib olmoqchimiz. Sizning javoblaringiz to'liq
-              anonim va faqat statistika uchun ishlatiladi.
+              {t("sidebarElements.survey.text")}
             </Typography>
             <Divider className="sidebar-survey-divider" />
 
@@ -223,7 +223,7 @@ function SideBarElement({ sidebarEl }: Props) {
               className="sidebar-survey-footer"
             >
               <Box component="span" onClick={() => setOpenSurveyModal(false)}>
-                Keyinroq eslatish
+                {t("sidebarElements.survey.remindme")}
               </Box>
               <Button
                 variant="contained"
@@ -234,7 +234,7 @@ function SideBarElement({ sidebarEl }: Props) {
                 disableFocusRipple
                 disableElevation
               >
-                So'rovdan o'tish
+                {t("sidebarElements.survey.btn")}
               </Button>
             </Box>
           </>
@@ -243,13 +243,12 @@ function SideBarElement({ sidebarEl }: Props) {
         {openContactsForm && (
           <div className="sidebar-contacts-form">
             <Typography variant="h3" className="sidebar-form-title">
-              Contact Us
+              {t("sidebarElements.form.title")}
             </Typography>
 
             {successMessage ? (
               <Typography variant="body1" className="success-message">
-                Thank you for your time, your opinion is very important to us
-                and will improve the quality of our services
+                {t("sidebarElements.form.successMessage")}
               </Typography>
             ) : (
               <>
@@ -260,10 +259,10 @@ function SideBarElement({ sidebarEl }: Props) {
                   onSubmit={onSubmit}
                 >
                   <Box component="label">
-                    Full name
+                    {t("sidebarElements.form.name")}
                     <CustomInput
                       type="text"
-                      placeholder="Enter full name"
+                      placeholder={t("sidebarElements.form.namePlaceholder")}
                       margin="none"
                       value={fullName}
                       error={Boolean(fullNameError)}
@@ -273,10 +272,10 @@ function SideBarElement({ sidebarEl }: Props) {
                     />
                   </Box>
                   <Box component="label">
-                    E-mail
+                    {t("sidebarElements.form.email")}
                     <CustomInput
                       type="email"
-                      placeholder="Enter your e-mail"
+                      placeholder={t("sidebarElements.form.emailPlaceholder")}
                       value={email}
                       margin="none"
                       error={Boolean(emailError)}
@@ -286,10 +285,10 @@ function SideBarElement({ sidebarEl }: Props) {
                     />
                   </Box>
                   <Box component="label">
-                    Message
+                    {t("sidebarElements.form.message")}
                     <CustomInput
                       minRows="4"
-                      placeholder="Enter your message"
+                      placeholder={t("sidebarElements.form.emailPlaceholder")}
                       className="sidebar-form-textarea"
                       value={message}
                       margin="none"
@@ -307,7 +306,7 @@ function SideBarElement({ sidebarEl }: Props) {
                     disableElevation
                     type="submit"
                   >
-                    Send
+                    {t("sidebarElements.form.btn")}
                   </Button>
                 </Box>
               </>

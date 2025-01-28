@@ -12,7 +12,7 @@
 }
 
 .home-dataset-stat .home-dataset-stat-title {
-  font-family: "Fira Sans", sans-serif;
+  font-family: "FiraSans-Regular";
   color: #222;
   max-width: 85%;
   letter-spacing: 0.004em;
@@ -21,7 +21,7 @@
 }
 
 .home-dataset-stat .home-dataset-stat-number {
-  font-family: "Fira Sans", sans-serif;
+  font-family: "FiraSans-Regular";
   opacity: 0.8;
   font-weight: 500;
 }

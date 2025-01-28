@@ -30,6 +30,7 @@ import { Link } from "react-router-dom";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
+import { useTranslation } from "react-i18next";
 
 const CustomInput = styled(TextField)({
   ".MuiInputBase-root": {
@@ -77,6 +78,7 @@ const CustomInput = styled(TextField)({
 });
 
 function Home() {
+  const { t } = useTranslation();
   const search = useRef<HTMLInputElement>(null);
 
   const onSearch = (e: ChangeEvent<HTMLFormElement>) => {
@@ -122,13 +124,13 @@ function Home() {
       <Box component="section" className="hero">
         <div className="container">
           <Typography component="h3" className="hero-intro">
-            Open Data Portal of the Republic of Uzbekistan
+            {t("hero.heroIntroText")}
           </Typography>
 
           <Box component="form" className="hero-form" onSubmit={onSearch}>
             <CustomInput
               type="text"
-              placeholder="Search in Open Data..."
+              placeholder={t("hero.heroSearchPlaceholder")}
               required
               fullWidth
               inputRef={search}
@@ -137,7 +139,7 @@ function Home() {
               <VscSettings />
             </Box>
             <Button variant="contained" disableElevation type="submit">
-              Find
+              {t("hero.heroSearchBtn")}
             </Button>
           </Box>
 
@@ -160,7 +162,7 @@ function Home() {
                   className="hero-stats-item"
                 >
                   <Typography component="span" color="#222222cc">
-                    {text}
+                    {t(text)}
                   </Typography>
                   <Typography component="span" color="#222222cc">
                     -
@@ -187,7 +189,7 @@ function Home() {
       <Box component="section" className="home-dataset">
         <Box component="div" className="home-top-dataset">
           <Typography variant="h3" className="home-dataset-title">
-            Top data sets
+            {t("homeDataset.leftTitle")}
           </Typography>
 
           {HomeTopDatasets.map((dataset) => (
@@ -196,7 +198,7 @@ function Home() {
         </Box>
         <Box component="div" className="home-popular-dataset">
           <Typography variant="h3" className="home-dataset-title">
-            Popular data sets
+            {t("homeDataset.rightTitle")}
           </Typography>
 
           {HomePopularDatasets.map((dataset) => (
@@ -213,8 +215,8 @@ function Home() {
           gap="10px"
           className="hero-news-intro"
         >
-          <Typography>Portal news</Typography>
-          <Link to="/news">All news</Link>
+          <Typography>{t("homeNews.introTitle")}</Typography>
+          <Link to="/news">{t("homeNews.introBtn")}</Link>
         </Stack>
         <Box component="div" className="news-slider slider-container">
           <Slider {...settings}>
@@ -228,7 +230,7 @@ function Home() {
       <Box component="section" className="home-dataset">
         <Box component="div">
           <Typography variant="h3" className="home-dataset-title">
-            Frequently downloaded datasets
+            {t("homeDatasetStats.freqDownloads.title")}
           </Typography>
 
           <Box component="div" className="home-dataset-wrapper">
@@ -237,13 +239,13 @@ function Home() {
             ))}
 
             <Typography variant="subtitle1" className="home-dataset-readmore">
-              More details...
+              {t("homeDatasetStats.readmore")}
             </Typography>
           </Box>
         </Box>
         <Box component="div">
           <Typography variant="h3" className="home-dataset-title">
-            Scope of application
+            {t("homeDatasetStats.scopOfAppl.title")}
           </Typography>
 
           <Box component="div" className="home-dataset-wrapper">
@@ -262,8 +264,8 @@ function Home() {
           gap="10px"
           className="home-request-intro"
         >
-          <Typography>Popular requests</Typography>
-          <Link to="/offers">All requests</Link>
+          <Typography>{t("homeRequests.title")}</Typography>
+          <Link to="/offers">{t("homeRequests.allRequests")}</Link>
         </Stack>
 
         <Box component="div" className="popular-requests-wrapper">

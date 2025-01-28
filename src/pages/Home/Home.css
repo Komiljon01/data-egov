@@ -3,7 +3,7 @@
 }
 
 .hero .hero-intro {
-  font-family: "Rubik", sans-serif;
+  font-family: "Rubik-Medium", sans-serif;
   font-weight: 500;
   font-size: 32.2px;
   line-height: 150%;
@@ -45,7 +45,8 @@
   cursor: pointer;
   width: 120px;
   transition: all 0.9s;
-  font-family: "Fira Sans", sans-serif;
+  font-family: "FiraSans-SemiBold";
+  text-transform: initial;
 }
 
 .hero-form button:hover {
@@ -61,7 +62,7 @@
 }
 
 .hero-stats-item span {
-  font-family: "Rubik", sans-serif;
+  font-family: "Rubik-Medium", sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 19.6px;
@@ -98,8 +99,7 @@
 .home-request-intro p {
   color: #000;
   font-size: 23.8px;
-  font-family: "Rubik", sans-serif;
-  font-weight: 500;
+  font-family: "Rubik-Medium";
 }
 
 .home-dataset > div {
@@ -121,7 +121,7 @@
 
 .hero-news-intro a,
 .home-request a {
-  font-family: "Rubik", sans-serif;
+  font-family: "Rubik-Medium", sans-serif;
   font-size: 14px;
   letter-spacing: 0.002em;
   color: #3369c7;
@@ -168,9 +168,8 @@
   cursor: pointer;
   text-align: right;
   color: #408ec6;
-  font-family: "Fira Sans", regular;
+  font-family: "FiraSans-Regular";
   font-size: 14px;
-  font-weight: normal;
   opacity: 0.8;
 }
 

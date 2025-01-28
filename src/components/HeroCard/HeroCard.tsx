@@ -1,6 +1,7 @@
 import { Box, Card, CardContent, Typography } from "@mui/material";
 import "./HeroCard.css";
 import { HeroCardsTypes } from "../../types";
+import { useTranslation } from "react-i18next";
 
 interface Props {
   card: HeroCardsTypes;
@@ -8,12 +9,13 @@ interface Props {
 
 function HeroCard({ card }: Props) {
   const { text, count, icon: image } = card;
+  const { t } = useTranslation();
 
   return (
     <Card className="hero-card">
       <CardContent className="hero-card-content">
         <Typography component="span" className="hero-card-text">
-          {text}
+          {t(text)}
         </Typography>
         <Typography component="span" className="hero-card-number">
           {count}

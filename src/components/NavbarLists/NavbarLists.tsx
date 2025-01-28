@@ -1,4 +1,5 @@
 import { ListItem } from "@mui/material";
+import { useTranslation } from "react-i18next";
 import { Link } from "react-router-dom";
 
 interface NavbarListsType {
@@ -16,30 +17,32 @@ type NavbarListsPaths =
   | "https://old.data.gov.uz";
 
 function NavbarLists() {
+  const { t } = useTranslation();
+
   const data: NavbarListsType[] = [
     {
       path: "organizations",
-      text: "Organizations",
+      text: t("navbar.navLink1"),
       isLink: false,
     },
     {
       path: "news",
-      text: "News",
+      text: t("navbar.navLink2"),
       isLink: false,
     },
     {
       path: "monitoring",
-      text: "Monitoring",
+      text: t("navbar.navLink3"),
       isLink: false,
     },
     {
       path: "statistics",
-      text: "Statistics",
+      text: t("navbar.navLink4"),
       isLink: false,
     },
     {
       path: "ai-data",
-      text: "AI Data",
+      text: t("navbar.navLink5"),
       isLink: false,
     },
     {

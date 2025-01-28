@@ -1,0 +1,197 @@
+{
+  "navbar": {
+    "logo": "OPEN DATA PORTAL",
+    "navLink1": "Organizations",
+    "navLink2": "News",
+    "navLink3": "Monitoring",
+    "navLink4": "Statistics",
+    "navLink5": "AI Data",
+    "loginText": "Log in",
+    "loginDialogTitle": "Log in to your personal account",
+    "loginDialogText": "To log in, log in with One ID.",
+    "loginDialogBtnText": "Log in with"
+  },
+  "sidebarElements": {
+    "left": {
+      "text1": "Legislative acts",
+      "text2": "Glossary",
+      "text3": "Instructions",
+      "text4": "Terms of Use"
+    },
+    "right": {
+      "text1": "FAQ",
+      "text2": "User Survey",
+      "text3": "Dataset Request",
+      "text4": "Contact Us"
+    },
+    "survey": {
+      "title": "User Survey",
+      "text": "Thank you for visiting our website. To improve its performance, we want to find out your opinion about the site using a small questionnaire. Please note that your responses are completely anonymous and will only be used for statistics.",
+      "remindme": "Remind me later",
+      "btn": "Take the survey"
+    },
+    "form": {
+      "title": "Contact Us",
+      "successMessage": "Thank you for your time, your opinion is very important to us and will improve the quality of our services",
+      "name": "Full name",
+      "namePlaceholder": "Enter full name",
+      "email": "E-mail",
+      "emailPlaceholder": "Enter your e-mail",
+      "message": "Message",
+      "messagePlaceholder": "Enter your message",
+      "btn": "Send",
+      "nameValidation1": "Full name must be at least 2 characters!",
+      "nameValidation2": "Full name must be less than 20 characters!",
+      "nameValidation3": "Full name must contain only letters and spaces!",
+      "emailValidation": "Invalid email address!",
+      "messageValidation1": "Message must be at least 2 characters!",
+      "messageValidation2": "Message must be less than 100 characters!"
+    }
+  },
+  "hero": {
+    "heroIntroText": "Open Data Portal of the Republic of Uzbekistan",
+    "heroSearchPlaceholder": "Search in Open Data...",
+    "heroSearchBtn": "Find",
+    "heroDatasetsText1": "Datasets",
+    "heroDatasetsText2": "Organizations",
+    "heroDatasetsText3": "Downloads",
+    "heroDatasetsText4": "Web service",
+    "cards": {
+      "text1": "Territory",
+      "text2": "Economy",
+      "text3": "Healthcare",
+      "text4": "Education",
+      "text5": "Culture",
+      "text6": "Business",
+      "text7": "Real estate",
+      "text8": "SDG",
+      "text9": "Tourism and sport",
+      "text10": "Insurance",
+      "text11": "Transportation",
+      "text12": "Ecology",
+      "text13": "Population",
+      "text14": "Finance",
+      "text15": "Trade",
+      "text16": "Offense",
+      "text17": "Agriculture",
+      "text18": "ICT",
+      "text19": "Justice and judge",
+      "text20": "Aral Sea region"
+    }
+  },
+  "toast": {
+    "success": "Your message is send successfully!",
+    "formError": "Form is invalid! Please check the fields!"
+  },
+  "homeDataset": {
+    "leftTitle": "Top data sets",
+    "rightTitle": "Popular data sets",
+    "topDatasets": {
+      "text1": "Computer tomography and monograph data (without personal identification)",
+      "text2": "Public transport data",
+      "text3": "Information about the movement of passengers in buses and minibuses in the city of Tashkent",
+      "text4": "Structure of the gross domestic product of the Republic of Uzbekistan by type of economic activity. (as a percentage of the total)",
+      "company1": "Ministry of Health of the Republic of Uzbekistan",
+      "company2": "Ministry of Transport Republic of Uzbekistan",
+      "company3": "Ministry of Transport Republic of Uzbekistan",
+      "company4": "State Statistics Committee of the Republic of Uzbekistan"
+    },
+    "popularDatasets": {
+      "text1": "Information about goods (works, services) that are planned to be purchased at the expense of Almalyk mining and metallurgical complex JSC",
+      "text2": "The list of certified professionals applying for participation in the field of conformity assessment as a staff",
+      "text3": "Information on public procurement, including goods (works, services) purchased under direct contracts by public procurement entities of Almalyk mining and metallurgical complex JSC",
+      "text4": "Register of licenses for the commercial transportation of passengers and goods by road on urban, suburban, intercity and international routes",
+      "company1": "Almalyk mining and metallugical complex JSC",
+      "company2": "Uzbek Agency for Technical Regulation under the Ministry of Investment, Industry and Trade of the Republic of Uzbekistan",
+      "company3": "Almalyk mining and metallugical complex JSC",
+      "company4": "Ministry of Transport Republic of Uzbekistan"
+    },
+    "cardDateTitle": "Updated"
+  },
+  "homeNews": {
+    "introTitle": "Portal news",
+    "introBtn": "All news",
+    "datas": {
+      "title1": "The hackathon “Open Data Challenge 2024” will take place",
+      "title2": "Results of fruitful cooperation with the OSCE Project Coordinator in Uzbekistan",
+      "title3": "Trainings were organized for employees responsible for ensuring openness in government authorities and departments",
+      "title4": "A meetings was organized for the delegation of Statistics Agency at the Statistics Poland",
+      "title5": "Cooperation and exchange of experience with the National Statistics Agency of Canada",
+      "title6": "International webinar on “Learning International Best Practices to Improve Open Gender Data in Uzbekistan”",
+      "text1": "From January 24 to 26, the Open Data Challenge hackathon will take place at the New Uzbekistan University. The event is organized by IT Park in collaboration with the OSCE Project Coordinator in Uzbekistan, with the support of the Statistics Agency and the Anti-Corruption Agency.",
+      "text2": "The Statistics Agency under the President of the Republic of Uzbekistan has been cooperating with the office of the OSCE Project Co-ordinator in Uzbekistan in the development of an open data ecosystem since 2019.",
+      "text3": "On December 2-11 of this year, the Statistics Agency under the President of the Republic of Uzbekistan organized training courses jointly with the OSCE Project Coordinator in Uzbekistan, the Technology Park of Software Products and Information Technologies (IT-Park) and the Anti-Corruption Agency.",
+      "text4": "On October 9-10, 2024, a meeting was held for the staff of the Statistics Agency under the President of the Republic of Uzbekistan in Warsaw, Poland, for the purpose of sharing experience.",
+      "text5": "On August 26-30 this year, in Ottawa (Canada), with the support of the OSCE Project Coordinator's Office in Uzbekistan, representatives of the Statistics Agency under the President of the Republic of Uzbekistan visited the National Statistics Agency of Canada (Statistics Canada).",
+      "text6": "On July 31 of this year, the Committee on Information Policy and Transparency in State Bodies of the Senate of the Oliy Majlis of the Republic of Uzbekistan, the Statistical Agency under the President of the Republic of Uzbekistan, the OSCE project Co-ordinator in Uzbekistan, the Open Data Watch, Open Data Charter and Women in Tech Uzbekistan, held an international webinar on the “Learning International Best Practices to Improve Open Gender Data in Uzbekistan”"
+    },
+    "readmore": "More details..."
+  },
+  "homeDatasetStats": {
+    "freqDownloads": {
+      "title": "Frequently downloaded datasets",
+      "text1": "Information about goods (works, services) that are planned to be purchased at the expense of Almalyk mining and metallurgical complex JSC",
+      "text2": "The list of certified professionals applying for participation in the field of conformity assessment as a staff",
+      "text3": "The list of certified professionals applying for participation in the field of conformity assessment as a staffInformation on public procurement, including goods (works, services) purchased under direct contracts by public procurement entities of Almalyk mining and metallurgical complex JSC",
+      "text4": "Register of licenses for the commercial transportation of passengers and goods by road on urban, suburban, intercity and international routes",
+      "text5": "Information on existing vacancies"
+    },
+    "scopOfAppl": {
+      "title": "Scope of application",
+      "text1": "MASS MEDIA",
+      "text2": "Personal goals",
+      "text3": "Application Development",
+      "text4": "Research work",
+      "text5": "Other"
+    },
+    "readmore": "More details..."
+  },
+  "homeRequests": {
+    "title": "Popular requests",
+    "allRequests": "All requests",
+    "table": {
+      "text1": "List of clinics in Tashkent",
+      "text2": "Information about agricultural land, including its outlines and boundaries",
+      "text3": "Distribution of Uzbekistan's external debt between states and international financial organizations",
+      "vote": "Vote"
+    }
+  },
+  "footer": {
+    "logoPart": {
+      "logoText": "Open data portal",
+      "copyrights": "All rights reserved"
+    },
+    "contacts": {
+      "title": "Contacts",
+      "agency": "State Committee of the Republic of Uzbekistan on Statistics:",
+      "support": "Tech. support:",
+      "email": "Email:",
+      "address": "Address:"
+    },
+    "footerLists": {
+      "title": "Site navigation",
+      "link1": "About open data",
+      "link2": "About the portal",
+      "link3": "Terms of Use",
+      "link4": "Legislative acts",
+      "link5": "Organizations",
+      "link6": "Monitoring",
+      "link7": "Statistics",
+      "link8": "News",
+      "link9": "Events calendar",
+      "link10": "Real time data",
+      "link11": "Offers",
+      "link12": "Instructions",
+      "link13": "Contact Us",
+      "link14": "FAQ",
+      "link15": "Glossary"
+    },
+    "useful": {
+      "title": "Useful links"
+    },
+    "footerTerms": {
+      "title": "When using the site materials in whole or in part, a link to thesite is required",
+      "text": "The site was developed by the E-Government Project Management Center"
+    }
+  }
+}

@@ -1,6 +1,7 @@
 import { Box, Card, Stack, Typography } from "@mui/material";
 import { HomeNewsTypes } from "../../types";
 import "./HomeSliderCard.css";
+import { useTranslation } from "react-i18next";
 
 interface Props {
   news: HomeNewsTypes;
@@ -8,6 +9,7 @@ interface Props {
 
 function HomeSliderCard({ news }: Props) {
   const { img, title, text, date } = news;
+  const {t} = useTranslation();
 
   return (
     <Card
@@ -18,14 +20,14 @@ function HomeSliderCard({ news }: Props) {
         boxShadow: "none",
       }}
     >
-      <Box component="img" src={img} alt={title} className="news-item-img" />
+      <Box component="img" src={img} alt={t(title)} className="news-item-img" />
 
       <Box component="div" className="news-item-content">
         <Typography variant="h3" className="news-item-title">
-          {title}
+          {t(title)}
         </Typography>
         <Typography variant="body1" className="news-item-text">
-          {text}
+          {t(text)}
         </Typography>
 
         <Stack
@@ -37,7 +39,7 @@ function HomeSliderCard({ news }: Props) {
             {date}
           </Typography>
           <Typography variant="body1" className="news-item-read-more">
-            More details...
+            {t("homeNews.readmore")}
           </Typography>
         </Stack>
       </Box>

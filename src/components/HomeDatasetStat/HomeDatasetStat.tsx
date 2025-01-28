@@ -1,18 +1,24 @@
 import { Box, Stack, Typography } from "@mui/material";
 import { HomeDatasetStatsTypes } from "../../types";
 import "./HomeDatasetStat.css";
+import { useTranslation } from "react-i18next";
 
 interface Props {
   data: HomeDatasetStatsTypes;
 }
 
 function HomeDatasetStat({ data }: Props) {
+  const { t } = useTranslation();
   const { text, statNum, width, color } = data;
+
   return (
-    <Box component="div" className={`home-dataset-stat ${color === "blue" && "active-stat"}`}>
+    <Box
+      component="div"
+      className={`home-dataset-stat ${color === "blue" && "active-stat"}`}
+    >
       <Stack direction="row" justifyContent="space-between" gap="20px">
         <Typography variant="body1" className="home-dataset-stat-title">
-          {text}
+          {t(text)}
         </Typography>
         <Typography
           variant="subtitle1"
